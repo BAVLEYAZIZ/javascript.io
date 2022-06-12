@@ -1,0 +1,181 @@
+******************HTML**********************
+    <!-- following cursor Animation "Drone" -->
+        <div class="drones">
+            <img src="images/whiles.png" class="whiles">
+            <img src="images/whiles.png" class="whiles">
+            <img src="images/whiles.png" class="whiles">
+            <img src="images/whiles.png" class="whiles">
+            <img src="images/drone.png" class="drone">
+        </div>
+
+
+
+*******************CSS*******************
+/* following cursor Animation "Drone"  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.drones{
+    position: absolute;
+    height: 369px;
+    width: 369px;
+    transform: translate(-50%,-50%) scale(30%);
+    transition: 1s ease;
+}
+img{
+    position: absolute;
+}
+.whiles:nth-child(1){
+    left: -18%;
+    top: -18%;
+}
+.whiles:nth-child(2){
+    right: -18%;
+    top: -18%;
+}
+.whiles:nth-child(3){
+    left: -18%;
+    bottom: -18%;
+}
+.whiles:nth-child(4){
+    right: -18%;
+    bottom: -18%;
+}
+.whiles{
+    animation: rotation 0.7s infinite linear;
+}
+@keyframes  rotation {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+*******************JS****************
+// following cursor Animation "Drone"
+let drone = document.querySelector(".drones")
+
+document.body.addEventListener("mousemove", function(e){
+    let x = e.offsetX;
+    let y = e.offsetY;
+
+    drone.style.left = x + "px";
+    drone.style.top = y + "px";
+},)
+
+*****************************************************************************************
+*****************************************************************************************
+*****************************************************************************************
+*****************************************************************************************
+
+
+
+**************JS************
+
+// Animation Follow Cursor
+document.addEventListener("mousemove", function(e){
+    let body = document.querySelector("body");
+    let point = document.createElement("div");
+    // coordinates
+    let x = e.offsetX;
+    let y = e.offsetY;
+    point.style.left = x + "px"
+    point.style.top = y + "px"
+    // Append ELement to Body
+    body.appendChild(point);
+    // SetTimeOut 
+    setTimeout(function(){
+        point.remove();
+    },5)  // if I Stop Moving 1 second The Time Become Out And No Heart Move
+},);
+
+****************CSS*************
+
+
+/* Animation Follow Cursor  */
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    min-height: 100vh;
+    background: #111;
+    overflow: hidden;
+    cursor: none;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width : 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+@keyframes fadeInOut {
+    0%,100% {
+        opacity: 0;
+    }
+    20%,80%{
+        opacity: 1;
+    }
+}
+
+
+div::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-repeat: no-repeat;
+    animation: moveShape 10s  linear infinite ;
+}
+
+@keyframes moveShape {
+    0% {
+        transform: translate(0) rotate(0deg);
+    }
+    100% {
+        transform: translate(300px) rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

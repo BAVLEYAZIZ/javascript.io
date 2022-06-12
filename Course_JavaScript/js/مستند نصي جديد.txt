@@ -1,0 +1,4785 @@
+********************************html ********************************
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn Javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- <h1 id="hello">hello</h1> -->
+
+
+
+        <!-- Lesson_51  "Anonymous Function"  -->
+        <!-- <button id="show">show</button>     -->
+
+
+
+        <!-- Lesson_64 -->
+        <!--         
+        <ul>
+            <li class="active">One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        <div class="content">
+            <div>Div One</div>
+            <div>Div Two</div>
+            <div>Div Three</div>
+        </div> 
+-->
+        
+
+
+<!-- Lesson_69 -->
+<!--    
+    <button id="cl">Click</button>
+-->
+
+
+    <!-- Lesson_72 -->
+        <!-- Find ELement By ID -->
+        <!-- <div id="my-div">Hello Div</div> -->
+
+        <!-- Find ELement By TagName -->
+        <!-- <p>Hello Paragraph 1</p>
+        <p>Hello Paragraph 2</p> -->
+
+        <!-- Find ELement By ClassName -->
+        <!-- <span class="my-span">My Span</span> -->
+
+        <!-- <form action="">
+            <input type="text" name="one" value="Hello" />
+        </form> -->
+
+        <!-- <a href="https://google.com">Google</a> 
+        <a href="https://facebook.com">Facebook</a> -->
+        
+
+
+    <!-- Lesson_73 -->
+        <!-- <div class="js">JavaScript <span>Div</span> &lt;Span&gt; </div> -->
+        <!-- <img src="" alt="" /> -->
+        <!-- <a class = "link" href="#">Google</a> -->
+
+
+    <!-- Lesson_74 -->
+        <!-- <div>Div</div> -->
+        <!-- <p class="para" title="Paragraph" data-src="Testing">Paragraph</p> -->
+
+
+    <!-- Lesson_77 -->        
+        <!-- <div> -->
+            <!-- Hello Div -->
+            <!-- <p>Hello P</p> -->
+            <!-- <span>Hello Span</span> -->
+        <!-- Comment -->
+            <!-- Hello -->
+        <!-- </div> -->
+
+
+    <!-- Lesson_78 -->
+        <!-- <button>Button</button>
+        <hr/>
+        <form action="">
+        <input type="text" />
+        <input type="submit" value="Submit Data" />
+        </form> -->
+
+
+
+    <!-- Lesson_79 -->
+        <!-- <form action="">
+            <input type="text" name="username" placeholder="Max 10 Chars Only" />
+            <input type="text" name="age" placeholder="Cant Be Empty" />
+            <input type="submit" value="Submit Data" />
+        </form>
+        <a href="https://google.com">Google</a> -->
+
+
+    <!-- Lesson_80 -->
+        <!-- <form class= "form" action="">
+            <input class="one" name="username" placeholder="Max 10 Chars Only" />
+            <input class="two" name="age" placeholder="Cant Be Empty" />
+            <input class="three" name="age" placeholder="Cant Be Empty" />
+            <input class="four" name="age" placeholder="Cant Be Empty" />
+            <input class="btn" type="submit" value="Submit Data" />
+        </form>
+        <a href="https://google.com">Google</a> -->
+        
+
+    <!-- Lesson_81 - Lesson_82 -->
+        <!-- <div id="my-div" class="one two show test">Div With Many Classes</div> -->
+
+
+
+    <!-- Lesson_83 -->
+        <!-- <div id="my-div">Div Has <span>Span</span> </div> -->
+
+
+
+    <!-- Lesson_84 -->
+        <!-- <div> -->
+            <!-- <span class="one">one</span> -->
+            <!-- comment -->
+            <!-- <span class="two">two</span> -->
+            <!-- comment -->
+            <!-- <span class="three">three</span> -->
+        <!-- </div> -->
+
+    <!-- Lesson_85  -->
+        <!-- <div>
+            My Div
+            <p id="my-para">This is <span>Paragraph</span></p>
+        </div> -->
+
+
+
+    <!-- Lesson_86 -->
+        <div>
+            
+            <p id="my-para">Clone <span>me</span></p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    </body>
+    </html>     
+
+
+
+
+
+***************************************CSS*************************************
+
+body {
+    height: 5000px;
+}
+
+div {
+    font-size: 30px;
+    line-height: 2;
+}
+
+
+
+
+*****************************************JAVASCRIPT***************************************
+
+
+
+// .........................................Lesson_1......................................
+
+/*
+    Output TO Screen
+    1-window.alert ==>Not recommended
+    2-document.write ==>Not recommended,  "U can Use document.creatElement("") to Creat Am Element"
+    3-console.log() ==>To Write Massage In Console TO Check Your Code
+*/
+
+// 1- window.alert("hello,World"); 
+
+//2- document.write("<h1>Hello,World</h1>"); 
+
+//3- console.log("Welcome From JavaScript ")
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_2......................................
+
+/*
+    Console Methods :
+    1-log
+    2-error
+    3-table
+
+    web API
+
+    styling Console
+    1-directive %c
+*/
+
+// 1-console.log("hello")
+
+// 2-console.error("Error")
+
+// 3-console.table(["Bavley","Aziz","Helmy"])
+
+// 1-console.log(" %cHello,  %cWorld", "color:red; font-size:40px;", "color:green; font-size:40px;");
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_3......................................
+
+/*
+    ES6 ==>ECMAScript معاير
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_4......................................
+
+/*
+    Data Type Intro :
+    1- String ==> "letter or number" 
+    2- Number ==> Number Without ""
+    3- Array=object ==> List[Numbers , Letters]
+    4- Boolean ==> True Or false
+    5- Undefined ==> Unavailable
+    6- Null ==> Empty
+
+*/
+
+// 1-console.log(typeof "Bavley")
+// 2-console.log(typeof 200)
+// 3-console.log(typeof ["14", "78", 100 ])
+// 3-console.log(typeof {name: "Bavley", age:21 , country:"Egypt"})
+// 4-console.log(typeof true)
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_5......................................
+
+/*
+    Variables Intro :
+    1- What Is Variable ? ==>  
+    2- Why We Use Variables ? ==> To control It In All Project
+    3- Declare A Variable And Use It 
+    4- Syntax ( Keyword | Variable name | Assignment Operator | variable Value  )
+    5- variable Without Var ==> Not Recommended
+    6- Multiple Variable In The Same Line 
+    7- Id And Global Variable ==> Access To An Element HTML Page
+    8- Loosely Typed VS Strong Typed 
+*/
+
+// 4-var  user = "Bavley"
+// 4-var  age  = 21 
+// console.log(user);
+// console.log(age);  
+
+// 6- var  user = "Bavley",
+    //  age  = 21
+// console.log(user);
+// console.log(age);  
+
+
+// 7- hello.innerHTML = "Bye";
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_6......................................
+
+/*
+    identifiers (var)
+    - Name Conventions And Rules ==> Don't Use Number and # In The First Use ( $ | bavLey | BavLey | _bavley )
+    - Reserved Words ==> Like ( var | function | if | while .... )
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_7......................................
+
+
+/*
+    What IS The Difference Between ( Var , Let , Const ) ?
+
+        Var:
+            1-Redeclare (Yes)
+            2-Access Before Declare (undefined)
+            3-variable Scope Drama ( Added To Window)
+            4-Block OR Function Scope
+
+        Let:
+            1-Redeclare (No)
+            2-Access Before Declare (error)
+            3-variable Scope Drama (Not Added To Window)
+            4-Block OR Function Scope
+
+        Const:
+            1-Redeclare (No)
+            2-Access Before Declare (error)
+            3-variable Scope Drama (Not Added To Window)
+            4-Block OR Function Scope
+
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_8......................................
+
+/*
+    String Syntax ==> "Bavley Aziz 'helmy'" , 'Bavley Aziz "helmy"'
+    Escape + Line Continue ==> "Bavley \\ Aziz \"helmy\""
+    New Line ==> \n 
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_9......................................
+
+/*
+    Concatenation ==> +
+    " " ==> Space
+*/
+
+// let a = "We Love"
+// let b = "JavaScript"
+
+// document.write(a + " " + b);
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_10......................................
+
+/*
+    Template Literals ( Template Strings )
+*/
+
+/*let a = "We Love"
+let b = "JavaScript"
+let c = "And"
+let d = "Programming"*/
+
+// console.log(a + " \"\" "+ b +"\n "+ c +" "+ d )
+
+/////       ECMAscript Method           /////
+/*console.log(`${a} "" ${b}      
+${c}  ${d} \\`) */       //TO Add Variable Uses ==> ${}   
+
+////      Example:    ////
+
+/* let title = "Bavley";
+let description = "Bavley Aziz Helmy";
+
+let markUp = `
+    <div class ="parent">
+        <div class="child">
+            <h2>${title}</h2>
+            <p>${description}</p>
+        </div>
+    </div>
+`;
+
+document.write(markUp); */
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_11......................................
+
+/* Arithmetic operators :
+    + Addition
+    - Subtraction
+    * multiplication
+    / Division
+    ** Exponentiation (ES7)
+    % Modulus (D1vision Remainder)
+    ++ Increment [ Post / Pre ] ==> Added 
+    -- Decrement [ Post / Pre ] ==> subtract 
+*/  
+
+// console.log(10+20)
+// console.log(10+"Bavley")    // 10 ==>String
+// console.log(10 - "Bavley")      // NaN ==> Not a Number
+// console.log(10 - 20);
+// console.log(10 - "Bavley");  // NaN
+// console.log(typeof NaN);
+// console.log(10 * 20);
+// console.log(10 - 20);
+// console.log(20 / 5);
+// console.log(20 / 3);
+// console.log(2 ** 4);
+// console.log(2 *2 *2 *2);
+// console.log(10 / 2);
+// console.log(11 % 2);    // Remove 1 TO Become Regular Number
+
+//  Increment "Post"
+/*let num = 1
+console.log(num++);*/   // Put Number In The First Then Increases The Number
+
+// Increment "pre"
+/*let num = 1
+console.log(++num); */  // increases The Number in the First Then Put number 
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_12......................................
+
+/*
+    -  + Unary Plus [Return Number If Its Not Number]
+    -  - Unary Negation [Return Number If Its Not Number + Negates It]
+Tests :
+    - Normal Number
+    - String Number
+    - String Negative Number
+    - String Text
+    - Float
+    - Hexadecimal Numeral System => 0×FF
+    - null
+    - false
+    - true
+*/
+
+/*
+
+console.log(+100);
+console.log(+"100");
+console.log(+"-100");
+console.log(+"Bavley");
+console.log(+"15.5");
+console.log(+0xff);
+console.log(+null);
+console.log(+false);
+console.log(+true);
+console.log(+100);
+
+console.log(-"100");
+console.log(-"-100");
+console.log(-"Bavley");
+console.log(-"15.5");
+console.log(-0xff);
+console.log(-null);
+console.log(-false);
+console.log(-true);
+
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_13......................................
+
+/*
+    Type Coercion (Type Casting)
+        - +
+        - -
+        - "" - 2
+        - false - true 
+*/
+
+// String + Number ==> String
+// let a = "10";
+// let b = 20;
+// let c = true;
+
+// console.log( `${a}${b} ${c}` ); // 1020 true 
+// console.log(a + b +" "+ c );  // 1020 true 
+// console.log(a - b );  // -10 
+
+// console.log(+" "); // 0
+// console.log( " " - 2 );  // " " ==> 0 = false
+
+// console.log(false - true); // -1
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_14......................................
+
+/*
+    Assignment Operators
+*/ 
+
+// let a = 10;
+
+// a = a + 20; // 30
+
+// a = a + 70; // 100
+
+// a += 100; // a-= a + 100
+
+// console.log(a); // 200
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_15......................................
+
+
+/*
+Number:
+    - Double Precision
+    - Syntactic Sugar "_"
+    - 1e6 ==> 1*10^6
+    - **
+    -With Decimal
+    -Number + BigInt
+    -Number Min Value
+    -Number Max Value
+*/
+
+// console.log(1000000); // 1000000
+// console.log(1_000_000); // 1000000
+// console.log(1e6); // 1000000
+// console.log(10 ** 6); // 1000000
+// console.log(10 *10 *10 *10 *10 * 10); // 1000000
+// console.log(1000000.0); // 1000000 
+// console.log(1000000.1); // 1000000.1
+// console.log(Number("1000000")); // 1000000 
+// console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+// console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+// console.log(Number.MAX_VALUE + 23434343434); // 1.7976931348623157e+308
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_16......................................
+
+
+/*
+    Number Methods :
+    - Two Dots To Call A Methods
+    - toString()
+    - toFixed ()
+    - parseInt()
+    - parseFloat()
+    - isInteger () [ES6]
+    - isNaN() [ES6]
+*/
+
+// console.log((100).toString());
+// console.log(100.10.toString());
+
+// console.log(100.554555. toFixed(2));
+
+// console.log(Number("100 Bavley"));
+// console.log(+"100 Bavley");
+// console.log(parseInt("100 Bavley"));
+// console.log(parseInt("Bavley 100 Bavley"));
+// console.log(parseInt("100.500 Bavley"));
+
+// console.log(parseFloat("100.500 Bavley"));  // Money
+
+// console.log(Number.isInteger("100"))
+// console.log(Number.isInteger(100.500))
+// console.log(Number.isInteger(100))
+
+
+// console.log(Number.isNaN("Bavley")) // false
+// console.log(Number.isNaN("Bavley" / 2)) // true 
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_17......................................
+
+
+/*
+    Math Object :
+    -- round ()
+    -- ceil()
+    -- floor ()
+    -- min()
+    -- max ()
+    -- pow()
+    -- random ()
+    -- trunc () [Es6]
+*/
+
+
+// console.log(Math.round (99.2)); // 99
+// console.log(Math.round (99.5)); // 100
+// console.log(Math.ceil(99.2)); // 100
+// console.log(Math.floor(99.9)); //  Floor Reverse ceil 
+// console.log(Math.min(10, 20, 100, -100, 98));
+// console.log(Math.max (10, 20, 100, -100, 90));
+// console.log(Math.pow(2, 4));
+// console.log(Math.random());
+// console.log(Math.trunc (99.5));  // trunc equal floor 
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_18......................................
+
+/*
+Number Challenge :
+*/
+
+// let a = 1_00 ; 
+// let b = 2_00.5;
+// let c = 1e2;
+// let d = 2.4;
+
+
+// Find Smallest Number In All Variables And Return Integer ???
+// console.log(parseInt(Math.min(a, b, c, d)));  // 2 
+
+// Use Variable a + d One Time To 1_0000 ???
+// console.log(Math.trunc(Math.pow(a, d))); // x
+
+// Get Integer "2" From d Variable With 4 Method ??? 
+// console.log(parseInt(2.4)); // 2
+// console.log(Math.floor(2.4)); // 2
+// console.log(Math.trunc(2.4)); // 2
+// console.log(Math.round(2.4)); // 2
+
+
+// Use Variable b + d To Get (1) ==> 66.67 String  ,  (2) ==> 67 Number  ???
+// console.log()
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_19......................................
+
+
+/*
+String Methods :
+(1)
+    -Access With Index ==> Start From 0
+    -Access With charAt()
+    -length ==> Number Of Character ("Starting From One")
+    -trim() ==> Remover Spaces
+    -toUpperCase()
+    -toLowerCase()
+    -Chain Methods
+(2)
+    -indexOf(Value [Mandatory], Start [Optional] 0)  ==> Start From beginning
+    -lastIndexOf(Value [Mandatory], Start [Optional] Length) 
+    -slice(Start [Mandatory], End [Optional] Not Include End) ==> Remove From Declare 
+    -repeat(Times) [ES6]
+    -split(Separator [Optional], Limit [Optional])  ==> Cut String
+(3)
+    - substring(Start [Mandatory], End [Opt] Not Including End).
+    -- Start > End ==> Will Swap
+    -- Start < 0 ==> It Start From 0
+    - Use Length To Get Last Character
+    - substr(Start [Mandatory], Characters To Extract)
+    -- Start >= Length = ""
+    -- Negative Start From End
+    - includes (Value [Mandatory], Start [Optional] Default e) [ES6] ==> true Or false
+    - startsWith(Value [Mandatory], Start [Optional] Default e) [ES6]
+    - endsWith(Value [Mandatory], Length [Optional] Default Full Length) [ES6]
+
+    length Start From 1
+    index Start From 0
+
+
+
+*/
+
+
+
+// let theList = [1, 2, 3, 4, 5];  // Index 1 2 3 4 5
+// console.log(theList[0])  // 1 "Starting From Zero" 
+
+
+
+
+// let theName = "Bavley";  // Index B a v l e y 
+// console.log(theName.charAt(0));  // B  "Starting From Zero"
+// console.log(theName[2]);  // v
+// console.log(theName.length);  //  6 
+
+
+
+
+// Difference Between  console.log(theName[6]) console.log(theName.charAt(6)) ???
+// console.log(theName[6]);  // undefined
+// console.log(theName.charAt(6));  // There Is No Value 
+
+
+
+
+// trim() ==> Remove Spaces ???
+// let theSecond = "    Aziz    ";
+// console.log(theSecond.length);  // 12
+// console.log(theSecond); //     Aziz     ==> With Spaces
+// console.log(theSecond.trim());  // aziz ==> Without Spaces 
+
+
+
+
+//  toUpperCase() - toLowerCase() ???
+// console.log(theSecond.toUpperCase());  //     AZIZ    ==> With Spaces
+// console.log(theSecond.trim(theSecond.toUpperCase())); // AZIZ ==> Without Spaces
+// console.log(theSecond.toLowerCase());  //     aziz    ==> With Spaces
+// console.log(theSecond.trim(theSecond.toUpperCase()));  // aziz ==> Without Spaces
+
+
+
+
+// Chain Methods ==> Chain In Which All Methods ('Keyword')
+// Find 'Z' From Aziz  
+// console.log(theSecond.trim().charAt(1).toUpperCase());  // Z
+
+
+
+
+// indexOf And lastIndexOf ??? 
+// let a = "Bavley Aziz Helmy";
+
+// console.log(a.indexOf ("Aziz"));  // 7 ==> Start From beginning '0'
+// console.log(a.indexOf ("Aziz", 8));  // -1 
+// console.log(a.indexOf ("e"));  // 4 ==>  Start From beginning '0'
+
+// console.log(a.lastIndexOf ("e"));  // 13 ==>  Start From beginning '0'
+
+
+// slice ???
+// console.log(a.slice(4));  // ey Aziz Helmy
+// console.log(a.slice(4, 11));  // ey Aziz  
+// console.log(a.slice(-5));  // Helmy
+// console.log(a.slice(-5, -2));  // Hel ==> Start From End And Cut at -2
+
+
+
+
+// repeat ??? 
+// console.log(a.repeat(2));  // Bavley Aziz HelmyBavley Aziz Helmy
+
+
+
+
+// split ???
+// console.log(a.split());  // ['Bavley Aziz Helmy']
+// console.log(a.split(""));  // (17) ['B', 'a', 'v', 'l', 'e', 'y', ' ', 'A', 'z', 'i', 'z', ' ', 'H', 'e', 'l', 'm', 'y']
+// console.log(a.split(" "));  // Cut At Spaces ==> (3) ['Bavley', 'Aziz', 'Helmy']
+// console.log(a.split(" ", 2));  // (2 ==> Limit)  ==> (2) ['Bavley', 'Aziz']
+// console.log(a.split("", 2));  // (2 ==> Limit)  ==>  (2) ['B', 'a']
+
+
+
+
+// substring ???
+// let a = "Bavley Aziz Helmy";
+
+// console.log(a.substring(3));  // ley Aziz Helmy
+// console.log(a.substring(3, 7));  // ley
+// console.log(a.substring(7, 3));  // ley
+// console.log(a.substring(-10, 7)); // Bavley   ==> (-10)'Any Number less Than 0 = 0' 
+
+// Use Length To Get Last Character ???
+// console.log(a.length);  // 17
+// console.log(a.substring(a.length - 1));  // y
+
+// Use Length To Get 'el'
+// console.log(a.substring(a.length - 4, a.length - 2 ));  // el
+
+
+
+
+
+// substr ??? 
+// let a = "Bavley Aziz Helmy";
+
+// console.log(a.substr(0));  // Bavley Aziz Helmy
+// console.log(a.substr(0, 5));  // Bavley
+// console.log(a.substr(-5));  // Helmy
+
+// // Get 'el'
+// console.log(a.substr(-4, 2));  // el
+
+
+
+
+
+
+// includes ???
+// let a = "Bavley Aziz Helmy";
+
+// console.log(a.includes("Bavley"));  // true
+// console.log(a.includes("B"));  // true
+// console.log(a.includes("Bavley", 7));  // false  Start From 7 
+
+
+
+
+// startsWith ???
+// let a = "Bavley Aziz Helmy";
+
+// console.log(a.startsWith("B"))  // true
+
+
+
+
+
+// endsWith ???
+// let a = "Bavley Aziz Helmy";
+
+// console.log(a.endsWith("y"));  // true
+// console.log(a.endsWith("y", 5));  // false 'e'
+// console.log(a.endsWith("ey", 6));  // true 
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_20......................................
+
+
+/*Comparison Operators
+    == Equal
+    != Not Equal ==> Compare Value Only
+
+    === Identical  ==> Recommended
+    !== Not Identical
+
+    > Larger Than
+    >= Larger Than Or Equal
+
+    < Smaller Than
+    <= Smaller Than Or Equal
+*/
+
+// Equal And Not Equal ???
+// console.log(10 == "10");   // true ==> Compare Value Only
+// console.log(10 != "10");   // false ==> Compare Value Only
+
+// Identical And Not Identical ???
+// console.log(10 === "10");  // false ==> Compare Value And Type
+// console.log(100 !== "100"); // true ==> Compare Value And Type
+
+// Larger Than Or Equal ???
+// console.log(100 > "100"); // false ==> You Can't compare between (Number, String)
+// console.log(100 >= 80 ); // true
+
+// console.log( "aziz" ===  "Bavley")  // false
+// console.log(typeof "aziz" === typeof "Bavley")  // true
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_21......................................
+
+/*
+Logical Operators
+    ! Not
+    && And ==> true true true == true,   true false true == false
+    || Or ==> true true true == true, false false true == true
+*/
+
+// console.log(true);  // true
+// console.log(!true);  // false
+// console.log(10 == 10 && "9" == "9");  // true
+// console.log(10 == 10 && "9" == "9" && 50 > 100 );  // false 
+// console.log(10 == 10 && "9" == "9" || 50 > 100 );  // true 
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_22......................................
+
+/*
+Control Flow
+    - if
+    - else if  ==> another Condition If The First condition not True  
+    - else
+
+    if(condition){
+        // Block of code
+    }
+
+
+*/
+
+// let price = 100;
+// console.log(price); // 100
+
+// IF ???
+// let price = 100;
+// let discount = true;
+// let discountAmount = 30;
+
+// if (discount === true){
+//     price -= discountAmount // price = price - 30 
+// }
+// console.log(price); // 70
+
+// Else if ???
+// let price = 100;
+// let discount = false;
+// let discountAmount = 30;
+// let country = "Egypt";
+
+// if (discount === true){
+//     price -= discountAmount  // false 
+// } else if (country === "Egypt"){
+//     price -= 40  // true 
+// }
+
+// console.log(price);  // 60
+
+
+// else ???
+// let price = 100;
+// let discount = false;
+// let discountAmount = 30;
+// let country = "Egypt";
+
+// if (discount === true){
+//     price -= discountAmount  //false 
+// } else if (country === "syria"){
+//     price -= discountAmount + 10  //false
+// } else if (country === "KSA"){
+//     price -= discountAmount + 20  //false
+// } else{
+//     price -= discountAmount + 40  // true 
+// }
+
+// console.log(price);  // 30
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_23......................................
+
+/*
+Nested If ==> Condition Inside Condition  
+*/ 
+
+// let price = 100;
+// let discount = false;
+// let discountAmount = 30;
+// let country = "Egypt";
+// let student = true;
+
+// if (discount === true) {
+//     price -= discountAmount
+// } else if (country === "Egypt" && student === true) {
+//     price -= discountAmount + 20
+// } else if (country === "Egypt" && student === false) {
+//     price -= discountAmount + 10
+// } else {
+//     price -= discountAmount + 40
+// };
+
+// console.log(price);  // 50 
+
+/*
+    OR
+*/
+
+// let price = 100;
+// let discount = false;
+// let discountAmount = 30;
+// let country = "Egypt";
+// let student = true;
+// let noParents = true; 
+
+// if (discount === true) {
+//     price -= discountAmount
+// } else if (country === "Egypt") {
+//     if (student === true) {
+//         if (noParents === true){
+//             price -= discountAmount + 40  // 30
+//         }
+//         else {
+//             price -= discountAmount + 20
+//         }
+//     }
+// } 
+// else {
+//     price = 100
+// };
+
+// console.log(price);  // 30 
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_24......................................
+
+/*
+Conditional (Ternary) Operator ==> if Emmet
+*/
+
+// let theName = "Ahmed";
+// let theGender = "Male";
+// let theAge = 30;
+
+// if (theGender === "Male") {
+//     console.log("Mr");
+// } else {
+//     console.log("Mrs");
+// }
+
+// Condition ? if true : if false 
+// theGender === "Male" ? console.log("Mr") : console.log("Mrs");
+
+// theAge < 20 ? console.log(20) : theAge > 20 && theAge < 60 ? console.log("20 To 60") : theAge > 60 ? console.log(60) : console.log("unknown")
+// theAge < 20 
+// ? console.log(20) 
+// : theAge > 20 && theAge < 60 
+// ? console.log("20 To 60") 
+// : theAge > 60 
+// ? console.log(60) 
+// : console.log("unknown")
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_25......................................
+
+/*
+Logical Or ||
+    -- Null + Undefined + Any Falsy Value
+Nullish Coalescing Operator ??
+    -- Null + Undefined
+
+Falsy Value:
+    - null
+    - 0
+    - ""
+*/
+
+// let price = 200; 
+// console.log(`The Price Is ${price}`);  // 200
+
+// let price = 0; 
+// let price;
+// let price = null 
+
+
+// console.log(`The Price Is ${price || 100}`);  // 100
+// console.log(`The Price Is ${price ?? 100}`);  // 100
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_26......................................
+
+/*
+Switch Statement
+switch(expression) {
+    Case 1:
+        // Code Block
+        break;
+    Case 2:
+        // Code Block
+        break;
+    Default:
+        // Code Block
+    }
+    Default Ordering
+    Multiple Match
+    ===
+*/
+
+// let day = 33;
+
+// switch (day) {
+//     case 0:
+//         console.log("Saturday");
+//         break;  // Stop
+//     case 1:
+//         console.log("Sunday");
+//         break;
+//     case 2:
+//     case 3:
+//         console.log("Monday");
+//         break;
+//     case 4:
+//         console.log("Tuesday");
+//         break;
+//     default:
+//         console.log("Unknown Day");
+//         break;
+// }
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_27......................................
+
+/*
+    Arrays: 
+    - Create Arrays [Two Methods]- new Array() + []
+    - Access Arrays Elements
+    - Nested Arrays
+    - Change Arrays Elements
+    - Check For Array Array.isArray (arr);
+*/
+
+// Create Arrays [Two Methods]- new Array() + [] ???
+// let myFriends = ["Bavley", "Aziz", "Helmy"]; 
+
+// Access Arrays Elements ???
+// console.log(`Hello ${myFriends[0]}`);  // Bavley
+
+// letter 3 Inside Aziz ???
+// console.log(`${myFriends[1][2]}`);  // i
+
+
+// Nested Array ???
+// let myBrothers = ["Bavley", "Aziz", ["Helmy","Ahmed"]]; 
+
+// letter 5 Inside Ahmed  ???
+// console.log(`${myBrothers[2][1][4]}`);  // d
+
+// Change Arrays Elements Ahmed To Mohamed And Omar ???
+// myBrothers[2][1] = ["Mohamed", "Omar"] ; 
+// console.log(myBrothers);
+
+// Check For Array Array.isArray (arr); ???
+// console.log(typeof myBrothers);  // Object ==> Array 
+// console.log(Array.isArray(myBrothers));  // true
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_28......................................
+
+
+/*
+Arrays Methods
+    Length
+*/
+
+// Index Start From 0 [0, 1, 2] 
+// let myFriends = ["Bavley", "Aziz", "Helmy"]; 
+
+// console.log(myFriends.length);  // 3 
+// myFriends[2] = "Omar";
+// console.log(myFriends); 
+
+// To Add New Element (always Add In The last)???
+// myFriends[3] = "Ahmed";
+// console.log(myFriends); 
+// OR 
+// myFriends[myFriends.length] = "Ahmed"  // Recommended 
+// console.log(myFriends); 
+
+//  Always Convert The Last Name To Mohamed ???
+// myFriends[myFriends.length - 1] = "Mohamed";
+// console.log(myFriends); 
+
+// Print 2 Elements ???
+// myFriends.length = 2 ;
+// console.log(myFriends); 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_29......................................
+
+/*
+Arrays Methods [Adding And Removing]
+    - unshift("", "") ==> Add Element To The First
+    - push("", "") ==>Add Element To The End
+    - shift() ==> Remove First Element From Array
+    - pop () ==> Remove Last Element From Array
+*/
+
+// let myFriends = ["Bavley", "Aziz", "Helmy"]; 
+// To Add Element ???
+// myFriends.unshift("bavley");  // Add Element To The First
+// myFriends.push("bavley");  // Add Element To The End
+// console.log(myFriends);
+
+// To Remove Element ???
+// myFriends.shift();
+// myFriends.pop();
+// console.log(myFriends);  // ['Aziz'];
+
+// Store The First Element To Use It In Another Place ???
+// let myFriends = ["Bavley", "Aziz", "Helmy"]; 
+
+// myFriends.shift();
+// console.log(myFriends);  // (2) ['Aziz', 'Helmy']  ==> Store Bavley
+
+// let firstName = myFriends.shift();
+
+// console.log(`The First Is ${firstName}`)  // Bavley
+
+// Store The End Element To Use It In Another Place ???
+// let lastName =  myFriends.pop();
+
+// console.log(`The End Is ${lastName}`);
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson30......................................
+
+/*
+Arrays Methods [Search]
+    - indexOf (Search Element, From Index [Opt])
+    - lastIndexOf(Search Element, From Index [Opt])
+    - includes (valueToFind, fromIndex [Opt]) [ES7]  ==> Condition
+*/
+
+// let myFriends = ["Bavley", "Aziz", "Helmy", "Bavley"]; 
+
+// console.log(myFriends.indexOf("Bavley"));  // 0
+// console.log(myFriends.indexOf("Bavley", 2));  // 3  ==> Start From 2
+
+
+// console.log(myFriends.lastIndexOf("Bavley"));  // 4
+// console.log(myFriends.lastIndexOf("Bavley", -2));  // 0  -2 ==> Start From "Helmy"
+
+// console.log(myFriends.includes("Bavley"));  // true
+
+// console.log(myFriends.indexOf("Omar"));  // -1  ==> Not Found 
+// console.log(myFriends.lastIndexOf("Omar"));  // -1  ==> Not Found 
+
+// if (myFriends.indexOf("Bavley") === -1) {
+//     console.log("Not Found");  // Condition False Bec, Bavley Found in The Array 
+// }  // Empty
+
+
+// if (myFriends.indexOf("Omar") === -1) {
+//     console.log("Not Found");  // Condition True Bec, Omar Not Found in The Array
+// }  // Not Found
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_31......................................
+
+/*
+Arrays Methods [Sort]
+    - sort(Function [Opt])  ==> alphabet (-Numbers, Numbers, 10, 100, 1000, a, b, c, .... )
+    - reverse
+*/
+
+// let myFriends = [10, "Bavley", "Aziz", "90", 1000, 100, 20, "10", -20, -10];
+
+// console.log(myFriends);
+// console.log(myFriends.sort());  // Arrange
+// console.log(myFriends.reverse());
+
+//  OR 
+// console.log(myFriends.sort().reverse());  // Arrange And Reverse 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_32......................................
+
+/*
+Arrays Methods [Slicing]
+    * slice(Start [Opt], End [Opt] Not Including End)
+    - slice() -> All Array
+    - If Start Is Undefined => 0
+    - Negative Count From End
+    - If End Is Undefined ||> Indexes => Slice To The End Array.length
+    - Return New Array
+    * splice(Start [Mentation], DeleteCount [Opt] [0 No Remove], The Items To Add [Opt])
+    - If Negative> Start From The End
+*/
+
+// let myFriends = ["Bavley", "Aziz", "Ali", "Helmy", "Omar", "Mohamed"];
+
+// slice() ???
+// console.log(myFriends);
+// console.log(myFriends.slice(1));  // All Accepted "Bavley"
+// console.log(myFriends.slice(1, 4));  // (3) ['Aziz', 'Ali', 'Helmy']
+// console.log(myFriends.slice(-3));  // (3) ['Helmy', 'Omar', 'Mohamed']
+// console.log(myFriends.slice(-4, 4));  // (2) ['Ali', 'Helmy']
+// console.log(myFriends.slice(-5, 4));  // (3) ['Aziz', 'Ali', 'Helmy']
+// Slices ==> return A New Array
+
+// splice(Start, Delete, Add) ???  ==> To Add And Delete Elements 
+// myFriends.splice(0, 0, "Ahmed");  // Add Ahmed In The Start 
+// console.log(myFriends) // (7) ['Ahmed', 'Bavley', 'Aziz', 'Ali', 'Helmy', 'Omar', 'Mohamed']
+
+// myFriends.splice(0, 2, "Ahmed");
+// console.log(myFriends);  // Delete "Bavley","aziz" And Add "Ahmed" 
+
+// How To Delete "Helmy" And Add "Ahmed", "Amr" ???
+// myFriends.splice(3, 1, "Ahmed", "Amr");
+// console.log(myFriends);  // (7) ['Bavley', 'Aziz', 'Ali', 'Ahmed', 'Amr', 'Omar', 'Mohamed']
+
+// Add "Ahmed", "Amr" Between "Ali", "Helmy" ???
+// myFriends.splice(3, 0, "Ahmed", "Amr");
+// console.log(myFriends); // (8) ['Bavley', 'Aziz', 'Ali', 'Ahmed', 'Amr', 'Helmy', 'Omar', 'Mohamed']
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_33......................................
+
+/*
+Arrays Methods [Joining]
+    - concat (array, array) ==> Return A New Array
+    - join(Separator)       
+*/
+
+// let myFriends = ["Bavley", "Aziz",  "Helmy", "Ahmed", "Omar", "Amr"];
+// let myNewFriends = ["Mohamed", "Ameer"];
+// let schoolFriends =  ["Ali", "Shady"];
+// console.log(myFriends);
+
+// concat() ???
+// let allFriends = myFriends.concat(myNewFriends, schoolFriends);
+// console.log(allFriends);  // (10) ['Bavley', 'Aziz', 'Helmy', 'Ahmed', 'Omar', 'Amr', 'Mohamed', 'Ameer', 'Ali', 'Shady']
+
+// Add More Items ???
+// let Add_items = myNewFriends.concat(schoolFriends, "boy", ["Girl", 1]);
+// console.log(Add_items);  // (7) ['Mohamed', 'Ameer', 'Ali', 'Shady', 'boy', 'Girl', 1]
+
+// join() ???
+// console.log(myFriends)  // (6) ['Bavley', 'Aziz', 'Helmy', 'Ahmed', 'Omar', 'Amr']
+// console.log(myFriends.join())  // Bavley,Aziz,Helmy,Ahmed,Omar,Amr
+// console.log(myFriends.join(""))  // BavleyAzizHelmyAhmedOmarAmr
+// console.log(myFriends.join(" "))  // Bavley Aziz Helmy Ahmed Omar Amr
+// console.log(myFriends.join(" @ "))  // Bavley @ Aziz @ Helmy @ Ahmed @ Omar @ Amr
+// console.log(myFriends.join(" And "))  // Bavley And Aziz And Helmy And Ahmed And Omar And Amr
+// console.log(myFriends.join(" And ".toUpperCase()))  // Bavley AND Aziz AND Helmy AND Ahmed AND Omar AND Amr
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_34......................................
+
+
+
+
+// let zero = 0;
+// let counter =  3;
+
+// let my  = ["Bavley", "Aziz", "Helmy", "Amr", "Omar", "Ameer"];
+
+// 1/ Write Code Here
+// console.log(my); //["Amr", "Helmy", "Aziz", "Bavley"]
+// console.log(my.slice("???")); // ["Helmy", "Aziz"]
+// console.log(); // "Boy"
+// console.log(); // "iZ"
+
+
+// Array Founded ["Amr", "Helmy", "Aziz", "Bavley"] ???
+// console.log(my.reverse()); // (6) ['Ameer', 'Omar', 'Amr', 'Helmy', 'Aziz', 'Bavley']
+// my.push("bavley");
+// console.log(my.reverse().splice(`${counter}`)); //  ###
+
+
+// Array Founded  ["Helmy", "Aziz"] ???
+// my.unshift("xxxxxx");
+// my.push("mmmmmmm");
+// my.shift()
+// console.log(my.reverse().slice(`${counter}`));  // ###
+
+// Only "Boy" ???
+// my.splice(0, `${counter + counter}`, "Boy");
+// console.log(my);  // ###
+
+
+// "iZ" ???
+// console.log(`${my[1][2]}${my[1][`${counter}`].toUpperCase()}`);  // ###
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_35......................................
+
+
+/*
+Loop
+    -For
+
+    for([1][2][3]) {
+        // Block Of Code
+    }
+        - [1] ==> Start From Zero {i = 0}
+        - [2] ==> Condition {i > 10}
+        - [3] ==>  increases one If the Condition True 
+    // i < 10 ==> {0,1,2,3,4,5,6,7,8,9} = 10 employees ,,,, i <= 10 ==> {0,1,2,3,4,5,6,7,8,9,10} == 11 employees
+*/
+
+// If You want to hiring only 10 employees ??? 
+// for (let i = 0; i < 10; i++ ) {  // // [i = 0] ==> Start ,,  [i < 10] ==> 0 To 9 = 10 employees ,, [I++] ==> To increases one If the Condition True
+    // console.log(i)
+// }
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_36......................................
+
+
+/*
+Loop
+    - Loop On Sequences
+*/
+
+// let myFriends = ["Bavley", "Aziz", "Helmy", "Ali", "Ameer"];
+
+// If You Want Print Every Name In console ???
+// console.log(myFriends[0]);
+// console.log(myFriends[1]);
+// console.log(myFriends[2]);
+// console.log(myFriends[3]);
+// console.log(myFriends[4]);
+
+// OR
+
+/*
+for (let i = 0; i < myFriends.length ; i++) {
+    console.log(myFriends[i]);
+}
+*/
+
+
+
+
+// Same Function ####
+
+// If You Want To Print "Bavley" 7 Times ???
+/*
+for (let i = 0; i < 7; i++ ) {
+    console.log(myFriends[0]); 
+}
+*/
+
+// If You Want To Print Only Names In Console ???
+
+// let myFriends = [1, 2, "Bavley", "Aziz", "Helmy", 3, 4, "Ali", "Ameer"];
+// let OnlyNames = [];
+
+// If Condition 
+/*
+
+if (typeof myFriends[0] === 'string') {
+    OnlyNames.push(myFriends[0]);
+}
+
+if (typeof myFriends[1] === 'string') {
+    OnlyNames.push(myFriends[1]);
+}
+
+if (typeof myFriends[2] === 'string') {
+    OnlyNames.push(myFriends[2]);
+}
+
+if (typeof myFriends[3] === 'string') {
+    OnlyNames.push(myFriends[3]);
+}
+
+console.log(OnlyNames);  // (2) ['Bavley', 'Aziz']
+
+*/
+
+
+// OR Loops
+
+
+/*
+
+for (let i = 0; i < myFriends.length; i++ ) {
+    if (typeof myFriends[i] === "string") {
+        OnlyNames.push(myFriends[i]);
+    }
+}
+console.log(OnlyNames)  // (5) ['Bavley', 'Aziz', 'Helmy', 'Ali', 'Ameer']
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_37......................................
+
+
+/*
+Loop
+-- Nested Loops ==> Loop Inside Loop
+*/
+
+
+
+/*
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+let colors = ["Red", "Green", "Black"];
+let models = [2020, 2021];
+
+for (let i = 0; i < products.length; i++) { 
+    console.log("#".repeat(15));    
+    console.log(`# ${products[i]}`);
+    console.log("#".repeat(15));
+    console.log("colors :")
+    for (let j = 0; j < colors.length; j++) { 
+        console.log(`- ${colors[j]}`)
+    }
+    console.log("Model :")
+    for (let k = 0; k < models.length; k++) { 
+        console.log(`-- ${models[k]}`)
+    }
+}
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_38......................................
+
+/*
+Loop Control
+    - Break  ==> Loop Stop
+    -Continue ==> Cut And Continue
+    -Label  ==> control The Nested loop
+*/
+
+
+
+/*
+
+// Break ==> Stop ???
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+let colors = ["Red", "Green", "Black"];
+// Print "Keyboard", "Mouse" Only 
+for (let i = 0; i < products.length; i++) {
+    if (products[i] === "Pen") {
+        break; 
+    }
+    console.log(products[i]);  // ###
+}
+
+*/
+
+
+
+/*
+
+// Continue ???
+let products = ["Keyboard", "Mouse", 10, 20, "Pen", "Pad", 30, 40, "Monitor"];
+let colors = ["Red", "Green", "Black"];
+
+// Cut Numbers
+for (let i = 0; i < products.length; i++) {
+    if (typeof products[i] === "number") {
+        continue;
+    }
+    console.log(products[i]); // All Without Numbers
+}
+
+
+*/
+
+
+
+/*
+
+// Label ==> control the loop
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor"];
+let colors = ["Red", "Green", "Black"];
+// Print Only ["Red", "Green"]
+mainLoop: for (let i = 0; i < products.length; i++) {
+    console.log(products[i]);
+    nestedLoop: for (let j = 0; j < colors.length; j++) {
+        console.log(`- ${colors[j]}`);
+        if (colors[j] === "Green") {
+        break nestedLoop ;
+        }   
+    }
+}
+
+
+*/
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_39......................................
+
+/*
+Loop For Advanced Example
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"]; 
+
+// for (let i = 0; i < products.length; i += 2 ) {
+//     console.log(products[i]);  // ["Keyboard", "Pen", "Monitor"]
+// }
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_40......................................
+
+/*
+Products Practice 
+Add Product To Page 
+*/
+
+/*
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"]; 
+let colors = ["Red", "Green", "Blue"]; 
+let showCount = 5;  // 5 Products
+let two = 2  // 2 Colors
+
+document.write(` <h1>Show ${showCount} Products</h1>`)
+for (let i = 0; i < showCount; i++) {
+    document.write(`<div>`);
+    document.write(`<h3>[${i + 1}]${products[i]}</h3>`);
+    for (let j = 0; j < two; j++){
+        document.write(`<p>- ${colors[j]}</p>`);
+    }
+    document.write(`<p>- ${colors.join(" | ")}</p>`);  // One By One
+    document.write(`</div>`);
+}
+
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_41......................................
+/*
+Loop
+    - While
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"]; 
+
+// let i = 0 ;
+
+/*
+
+// Code Stop at 3
+while (i < 10) {
+    console.log(i) // infinite Loop
+    i += 1;  // i++
+    if (i === 4) {
+    break;  // Stop at 3
+    }
+}
+
+*/
+
+/*
+
+while (i < products.length) {
+    console.log(products[i]) // infinite Loop
+    i += 1;  // i++
+}
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_42......................................
+
+/*
+Loop
+-- Do / While 
+[1] Do ==> even if Wrong
+[2] Check
+*/
+
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"]; 
+
+// let i = 0 ;
+
+/*
+
+while (false) {
+    i++ 
+    console.log(i) // Not Display AnyThing 
+}
+
+*/
+
+/*
+
+do {
+    console.log(i);
+    i++ ;
+}while(false) // 0
+
+console.log(i); // 1 
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_43......................................
+
+
+
+// let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+// let myEmployees = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia"]; 
+
+// let showA = ["Amgad", "Ameer", "Amany"]
+
+// let NumberOfAdmin = myAdmins.length ; 
+
+// document.write(`<div>We Have X Admins</div>`);
+// document.write(`<div>We Have X Admins</div>`);
+// document.write(`<hr>`);
+
+
+// for (let i = 0; i < NumberOfAdmin; i++ ) {
+//     document.write(`<div>`);
+//     document.write(`<p>The Admin For Team ${i + 1 } Is ${myAdmins[i]}</p> `)
+//     document.write(`<h1>Team Members :</h1>`);
+//     for (let j = 0; j < myEmployees.length; j++) {
+//         if (myAdmins === myEmployees.indexOf("A")) {
+//             document.write(`${j} `)
+//         }
+//         document.write(myEmployees[j]);  // ###
+
+//     }
+        
+//     document.write(`</div>`);
+//     document.write(`<hr>`);
+    
+// }
+
+
+
+    // if (products[i] === "Pen") {
+    //     break; 
+    // }
+    // console.log(products[i]);  // ###
+
+// (myFriends.indexOf("Bavley") === -1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_44......................................
+
+
+/*
+Loop Challenge
+*/
+
+
+/*
+
+
+let Admines = ["Ahmed","Mourad","Othmane","Sayed","Bavley"];
+let Employee = ["Aziz","Ali","Mohamed","Omar","Samira","Mohab","Said","Ossama","Antar","Souaad"];
+let counter = 0;
+
+document.write(`<h1>We Have ${Admines.length} Admines</h1>`);
+
+
+for(let i=0; i < Admines.length; i++) {
+    document.write(`<hr>`);
+    document.write(`<h1>Team Members :</h1>`);
+        document.write(`<h2>The Admine  ${i + 1} for Teame is ${Admines[i]}</h2>`);
+        for(let j=0; j < Employee.length; j++) {
+            if(Employee[j].charAt(0) === Admines[i][0]) {
+                counter+=1;
+                document.write(`<h3> ${counter}- is ${Employee[j]}</h3>`)
+            }
+        }   
+        // counter = 0;
+}
+
+*/
+
+
+
+
+
+
+
+/*
+
+let clients = ["Mohamed", "Bavley", "Omar", "Amr", "sayed", "Fadi","Devid","Lores","Hoda"]
+let car = ["Lamborghini", "Mercedes", "Bugatti","Dodge","Ferrari", "Hondai", "Hondai"]
+let counter = 0;
+
+for (let i = 0; i < clients.length; i++ ) {
+    document.write(`<hr>`);
+    document.write(`<h1> ${clients[i]} :</h1>`)
+    for (let j = 0; j < car.length; j++) {
+        if (car[j].charAt(0) === clients[i][0]) {
+            counter++
+            document.write(`<p>${counter}- My Car is ${car[j]}</p>`);
+        }
+    }
+    counter = 0; 
+}
+
+
+*/
+
+
+
+
+
+
+
+
+/*
+
+let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+let myEmployees = ["Amgad", "Samah", "Ameer", "Omar", "Othman", "Amany", "Samia", "Anwar"];
+
+let admins_count = 0;  
+myAdmins.length = myAdmins.indexOf("Stop");
+document.write(`<div>We Have ${myAdmins.length} Admins</div>`);
+
+document.write(`<hr/>`);
+
+let leader = 0;
+let teamN = 0;
+let workerN = 0;
+for (; leader<myAdmins.length; leader++) {
+    teamN++
+    document.write(`<div>The admin For Team ${teamN} is ${myAdmins[leader]}</div>`);
+    letter = myAdmins[leader][0];
+    document.write(`<h3>Team Members:</h3>`);
+    for (let workers = 0; workers<myEmployees.length; workers++){
+        myEmployees[workers].startsWith(letter)
+        ? document.write(`<p>- ${++workerN} ${myEmployees[workers]}</p>`)
+        : workers = workers
+    }
+    workerN = 0
+    document.write(`<hr/>`);
+}
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_45......................................
+
+
+/*
+Function
+    - What Is Function ? ==> Block Of Code do a Specific task [DRY] ==> Dont Repeat Yourself 
+    - User-Defined vs Built In
+    - Syntax + Basic Usage
+    - Example From Real Life
+    - Parameter + Argument
+    - Practical Example
+
+    function identifier(Parameter or Variable) {
+        // Block Of Code
+    }
+    identifier("value");
+*/
+
+
+
+/*
+
+// Example [1] :
+function sayHello() {
+    console.log(`hello Bavley`);
+}
+sayHello();
+
+
+// Example [2] :
+document.write(`<h1>Hello Bavley</h1>`)
+document.write(`<h1>Hello Aziz</h1>`)
+document.write(`<h1>Hello Helmy</h1>`)
+document.write(`<h1>Hello Osama</h1>`)
+
+// Or ==> Recommended Bec, You Can Edit Hello in one line
+
+*/
+
+
+
+/*
+
+function sayHello(userName) { 
+    document.write(`<h1>Hello ${userName}</h1>`)
+}
+sayHello("Bavley");
+sayHello("Aziz");
+sayHello("Helmy");
+sayHello("Osama");
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_46......................................
+
+/*
+Function Advanced Examples
+*/
+
+
+
+/*
+
+
+// If Age is Not Suitable Print This App is Not Suitable For You ???
+function sayHello(userName, age) {
+    if (age < 20) {
+        document.write(`<p>This App is Not Suitable For You</p>`)
+    }else {
+        document.write(`<p>Your Welcome , ${userName} ...</p>`)
+    }
+
+}
+sayHello("Osama",40);
+sayHello("Sayed",15);
+sayHello("Ali",20);
+
+
+*/
+
+/*
+
+function generateYears (start, end, exclude) {
+    for (let i = start; i <= end; i++) {
+        if (i === exclude) {
+            continue;
+        }
+        document.write(`<p>${i}</p>`);
+    }
+}
+generateYears(2001, 2022, 2002);
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_47......................................
+
+/*
+Function
+    - Return
+    - Automatic Semicolon Insertion [No Line Terminator Allowed]
+    - Interrupting ==> Stop Function
+*/
+
+
+/*
+
+// Sum = num1 + num2 
+function calc(num1, num2) {
+    return (num1 + num2);
+}
+
+let sum = calc(10, 20);
+
+document.write(`<h1>${sum}</h1>`);
+
+*/
+
+
+/*
+
+// Function Print From 10 To 20    Interrupting ???
+function generate(start, end) {
+    for (let i = start; i <= end; i++) {
+        if (i === 15) {
+            return `Interrupting`;
+        }
+        document.write(`<h1>${i}</h1>`);
+    }
+}
+generate(10, 20)
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_48......................................
+
+
+/*
+Function
+    - Default Function Parameters
+    - Function Parameters Default [Undefined]
+    - Old Strategies [Condition + Logical Or]
+    - ES6 Method
+*/
+
+
+
+/*
+
+function sayHello(username = "Unknown", age = "Unknown") {
+    return `Hello ${username} Your Age Is ${age}`;
+}
+document.write(sayHello("Osama"));
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_49......................................
+
+/*
+
+Function
+    - Rest Parameters ==> if I Want To Add More Values Dynamic [...] 
+    - Only One Allowed
+    - Must Be Last Element
+*/
+
+
+
+
+/*
+
+function calc(...numbers) {
+    let sum = 0;  // In The End  
+
+    for (let i = 0; i < numbers.length; i++) {  // In The First
+        sum += numbers[i]; 
+    }
+    return `The Sum is ${sum}`;
+}
+
+document.write(calc(10, 20, 100));
+
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_50......................................
+
+/*
+Function Advanced Practice
+    - Parameters
+    - Default
+    - Rest
+    - Loop
+    -Condition
+*/
+
+// Creat Function To Display Information  ???
+
+/*
+// Advanced Practice ???
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) { // [us] => User , [ag] => Age , [rt] => Rating , [sk] =>Skills , [un] => = Unknown
+    document.write(`<div>`)
+    document.write(`<h2>Welcome, ${us}</h2>`)
+    document.write(`<p>Age : ${ag}</p>`)
+    document.write(`<p>Hour Rate : $${rt}</p>`)
+    if (show === "Yes") {
+        document.write("Show Skills")
+    }else {
+        document.write("Do Not Show Skills")
+
+    }
+    document.write(`</div>`)
+}
+
+showInfo("Bavley", 21, 20, "No" );
+
+*/
+
+
+/*
+
+// More Advanced Practice :
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) { // [us] => User , [ag] => Age , [rt] => Rating , [sk] =>Skills , [un] => = Unknown
+    document.write(`<div>`)
+    document.write(`<h2>Welcome, ${us}</h2>`)
+    document.write(`<p>Age : ${ag}</p>`)
+    document.write(`<p>Hour Rate : $${rt}</p>`)
+    if (show === "Yes") {
+        for (let i = 0; i < sk.length; i++) {
+            document.write(`Skills is : ${sk[i]}`)
+        }
+    }else {
+        document.write(`<p>Skills is Hidden</p>`)
+
+    }
+    document.write(`</div>`)
+}
+
+showInfo("Bavley", 21, 20, "Yes" , [`Html | Css | Javascript `]);
+
+
+//  Or 
+
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) { // [us] => User , [ag] => Age , [rt] => Rating , [sk] =>Skills , [un] => = Unknown
+    document.write(`<div>`)
+    document.write(`<h2>Welcome, ${us}</h2>`)
+    document.write(`<p>Age : ${ag}</p>`)
+    document.write(`<p>Hour Rate : $${rt}</p>`)
+    if (show === "Yes") {
+        document.write(`<p>${sk.join(" | ")}</p>`)
+    }else {
+        document.write(`<p>Skills is Hidden</p>`)
+
+    }
+    document.write(`</div>`)
+}
+
+showInfo("Bavley", 21, 20, "Yes" , [`Html | Css | Javascript `]);
+
+
+
+
+*/
+
+/*
+
+// The Most Advanced Practice ==> [Nested Condition]  :
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) { // [us] => User , [ag] => Age , [rt] => Rating , [sk] =>Skills , [un] => = Unknown
+    document.write(`<div>`)
+    document.write(`<h2>Welcome, ${us}</h2>`)
+    document.write(`<p>Age : ${ag}</p>`)
+    document.write(`<p>Hour Rate : $${rt}</p>`)
+    if (show === "Yes") {
+        if (sk.length > 0) {
+            document.write(`<p>Skills: ${sk.join(" | ")}</p>`)
+        } else {
+            document.write(`<p>Skills: No Skills</p>`)
+        }
+    }else {
+        document.write(`<p>Skills is Hidden</p>`)
+    }
+    document.write(`</div>`)
+}
+
+showInfo("Bavley", 21, 20, "Yes" , "Html" , "Css" , "Javascript" );
+
+
+
+// OR Loop
+
+
+function showInfo(us = "Un", ag = "Un", rt = 0, show = "Yes", ...sk) { // [us] => User , [ag] => Age , [rt] => Rating , [sk] =>Skills , [un] => = Unknown
+    document.write(`<div>`)
+    document.write(`<h2>Welcome, ${us}</h2>`)
+    document.write(`<p>Age : ${ag}</p>`)
+    document.write(`<p>Hour Rate : $${rt}</p>`)
+    if (show === "Yes") {
+        if (sk.length > 0) {
+            document.write(`<h3>Skills is :  </h3>`)
+            let counter = 0 ;  // 1-  2-  3-
+            for (let i = 0; i < sk.length; i++) {
+                counter++
+                document.write(`<p>${counter} - ${sk[i]}  </p>`)
+            }
+        } else {
+            document.write(`<p>Skills: No Skills</p>`)
+        }
+    }else {
+        document.write(`<p>Skills is Hidden</p>`)
+    }
+    document.write(`</div>`)
+}
+
+showInfo("Bavley", 21, 20, "Yes" , "Html" , "Css",  "Javascript"  );
+
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_51......................................
+
+/*
+Function
+    - Anonymous Function  ==> Unknown Function  Make Variable 
+    - Calling Named Function vs Anonymous Function
+    - Argument To Other Function
+    - Task Without Name
+    - SetTimeout
+*/
+
+
+/*
+
+// Example 
+function sayHello() {
+    console.log("Hello Osama");
+}
+document.getElementById("show").onclick = sayHello;
+
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_52......................................
+
+/*
+Nested Function:
+    - Function Inside Function
+    - Return Function
+*/
+
+/*
+
+// Example 1 
+
+function sayMessage(firstName, secondName) {
+    let message = `Hello`;
+    // Nested Function
+    function concatMsg() {
+        message = `${message} ${firstName} ${secondName}`;
+    }
+    concatMsg();
+    return message;
+}
+console.log(sayMessage("Bavley", "Aziz"));
+
+
+*/
+
+
+/*
+
+// Example 2
+
+function sayMessage (firstName, secondName) {
+    let message =`Hello`;
+    // Nested Function
+    function concatMsg() {
+        return `${message} ${firstName} ${secondName}`;
+    }
+    return concatMsg();
+}
+
+console.log(sayMessage("Bavley", "Aziz"));
+
+*/
+
+
+
+/*
+
+
+// Example 3
+// let message =`Hello`;  // You Can Creat Variables Inside And OutSide Function 
+
+function sayMessage (firstName, secondName) {
+    let message =`Hello`; 
+    // Nested Function
+    function concatMsg() {
+        function getFullName() {
+            return `${firstName} ${secondName}`
+        }
+        return `${message} ${getFullName()}`;
+    }
+    return concatMsg();
+}
+
+console.log(sayMessage("Bavley", "Aziz"));
+
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_53......................................
+
+
+/*
+Function:
+    - Arrow Function
+    - Regular vs Arrow [Parameter + No Parameter]  ==> Only Uses In One Line
+    - Multiple Lines
+*/
+
+
+
+
+
+
+/*
+
+//If I Have One Line Inside Function "Without Parameter" ???
+// Regular Function
+let print =  function() {
+    return `10`;
+}
+console.log(print()); 
+
+// Arrow Function 
+let print = () => 10;  // You Can Convert () To _
+console.log(print()); 
+
+
+*/ 
+
+
+
+
+
+/*
+
+//If I Have  One Line And "One Parameter" Inside Function  ???
+// Regular Function
+let print = function (num) {
+    return num ;
+} 
+console.log(print(10));
+
+
+// Arrow Function 
+let print = (num) => num ;  // You Can Remove ()
+console.log(print(10));
+
+
+*/
+
+
+/*
+
+
+//If I Have  One Line And  "Two Or More Parameter" Inside Function  ???
+// Regular Function
+let print = function (num1, num2) {
+    return result = num1 + num2 ;
+} 
+console.log(print(20, 10));
+
+
+// Arrow Function 
+let print = (num1, num2, num3) => num1 + num2 - num3;  
+console.log(print(10, 50, 10));
+
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_54......................................
+
+
+/*
+Scope:
+    - Global Scope
+    - Local Scope  ==> inside Function Only
+*/
+
+
+
+
+/*
+
+
+// Global Scope
+var a = 1;
+let b = 2;
+
+console.log( `From Global ${a}`); // From Global 1
+console.log( `From Global ${b}`); // From Global 2 
+
+
+
+function showText() {
+    // Local Scope
+    var a = 20;
+    let b = 50;
+    console.log( `Function - From Local ${a}`);  // Function - From Local 50
+    console.log( `Function - From Local ${b}`);  // Function - From Local 50
+}
+
+showText();
+
+
+*/
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_55......................................
+
+
+/*
+Scope:
+    - Block Scope [If, Switch, For]
+    let ==> Block Scope
+    const ==> Block Scope
+    var ==> Not Block Scope
+*/
+
+
+
+
+
+/*
+
+// Var ???
+var x = 10;
+
+if (10 === 10) {
+    var x = 20;  
+}
+console.log(x) // 20  Make Override  
+
+
+*/
+
+
+
+
+
+/*
+
+
+// Let Or Const ???
+var x = 10;
+
+if (10 === 10) {
+    let x = 20;  
+    console.log(`From If Condition ${x} `); // If I Hide [x = 20;]  ==> Display "From If Condition 10"
+};
+
+console.log(`From global ${x} `);
+
+
+*/
+
+
+
+
+// // Global Scope
+// var a = 1;
+// let b = 2;
+
+// console.log( `From Global ${a}`);
+// console.log( `From Global ${b}`);
+
+
+
+// function showText() {
+//     // Local Scope
+//     var a = 20;
+//     let b = 50;
+//     console.log( `Function - From Local ${a}`);  
+//     console.log( `Function - From Local ${b}`);  
+// }
+
+// showText();
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_56......................................
+
+/*
+Scope:
+    - Lexical Scope
+
+Search:
+    - Execution Context
+    - Lexical Environment
+*/
+
+
+
+
+/*
+
+// Without Global Variables
+function parent() {
+    let a = 10;
+    function child() {
+        console.log(a);
+    }
+    child();
+}
+parent();  // 10
+
+*/
+
+
+
+
+
+/*
+
+// With Global Variables
+let a = 20;
+
+function parent() {
+    function child() {
+        console.log(a);
+    }
+    child();
+}
+parent();  // 20
+
+*/
+
+
+
+
+
+
+/*
+
+
+// With Global And Local Variables 
+let a = 30;
+function parent() {
+    let a = 10;
+    function child() {
+        console.log(a);
+    }
+    child();
+}
+parent();  // 10  ==> Print scope Block
+
+
+
+
+*/
+
+
+
+/*
+
+
+// With Global And Local Variables And GrandChild  
+
+let a = 50;
+function parent() {
+    let a = 20;
+    function child() {
+        console.log(a);
+        function grandChild() {
+            let b = 30;
+            console.log(`From GrandChild ${b}`);
+        }
+        grandChild();
+    }
+    child();
+}
+parent();  // 30 ,, if 30 hide print 20 ,, if 20 hide print 50
+
+
+*/
+
+
+/*
+
+
+// Child Can Not Access To Variable Inside Grandchild
+let a = 50;
+function parent() {
+    let a = 20;
+    function child() {
+        console.log(a);
+        console.log(`From Child ${b}`);  // #
+
+        function grandChild() {
+            let b = 30;
+            console.log(`From GrandChild ${b}`);
+        }
+        grandChild();
+    }
+    child();
+}
+parent();  // 30 ,, if 30 hide print 20 ,, if 20 hide print 50
+
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_57......................................
+
+
+/*
+Arrow Function Challenge
+*/
+
+
+
+
+
+
+/*
+
+
+// Example 1
+
+//Regular
+// let names = function (...name) {
+//     return `string [${name.join("],[")}] => Done !`
+// }
+
+// console.log(names("Osama","Mohamed","Ali","Ibrahim"));  // string [Osama],[Mohamed],[Ali],[Ibrahim] => Done !
+
+
+// Arrow
+// let names = (...name) => `string [${name.join("],[")}] => Done !`;
+
+// console.log(names("Osama","Mohamed","Ali","Ibrahim"));
+
+
+
+*/
+
+
+
+
+
+/*
+
+
+// Example 2
+let myNumbers = [20, 50, 10, 60];
+
+// Regular
+function calc (one , two , ...myNumbers){
+    return one + two + Number(myNumbers);
+}
+
+console.log(calc(10, myNumbers[0], myNumbers[1])); // 80
+
+
+
+// Arrow
+let calc = (one, two, ...nums) => one + two + Number(nums);
+
+console.log(calc(10, myNumbers[0], myNumbers[1])); // 80
+
+
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_58......................................
+
+
+
+/*
+
+"Higher Order Functions:"
+    ---> is a function that accepts functions as parameters and/or returns a function.
+
+    - Map:
+    -- method creates a new array:
+    -- populated with the results of calling a provided function on every element
+    -- in the calling array.
+
+    -Syntax map(callBackFunction(Element, Index, Array) {}, thisArg):
+    -- Element => The current element being processed in the array.
+    -- Index => The index of the current element being processed in the array.
+    -- Array => The Current Array
+
+    - Notes:
+    -- Map Return A New Array
+    
+    - Examples:
+    -- Anonymous Function
+    -- Named Function
+
+*/
+
+// let myNumbers = [1, 2, 3, 4, 5, 6];
+
+// If You Want To Creat A new Array To Summation all Element + Yourself like : 1+1=2 , 2+2=4 .. ????
+
+/*
+
+// First Method "General"
+
+// Creat A New Empty Array  
+let newArray = [];
+
+for (let i = 0; i < myNumbers.length; i++){
+    newArray.push(myNumbers[i] + myNumbers[i]);
+}
+console.log(newArray);
+
+*/
+
+/*
+
+// Second Method "Map"
+
+let newArray = myNumbers.map(function(element){
+    return element + element
+},)
+
+console.log(newArray);
+
+// OR 
+
+let newArray = myNumbers.map((element) => element + element);
+
+console.log(newArray);
+
+// OR
+
+function addition(element) {
+    return element + element;
+}
+
+let add = myNumbers.map(addition);
+
+console.log(addition); 
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_59......................................
+
+
+/*
+
+Мар Practice:
+    - Swap Cases
+    - Inverted Numbers
+    - Ignore Boolean Value
+
+*/
+
+/*
+
+let swappingCases = "BaVlEy";
+let invertedNumbers = [1, -10, -20, 15, 100, -30];
+let ignoreNumbers =  "Ba72vl95ey4"; 
+
+*/
+
+
+
+/*
+
+// Convert "BaVlEy" TO Upper Case ?????
+
+if (swappingCases === swappingCases.toUpperCase() ){
+    console.log(swappingCases.toUpperCase())
+} else {
+    console.log(swappingCases.toUpperCase())
+};
+
+
+*/
+
+
+/*
+
+// First Convert Small Letter To Upper Letter And Reverse ?????
+
+let sw = swappingCases.split("").map(function (ele) {
+    // Condition ? True : False
+    return ele === ele.toUpperCase() ? ele.toLowerCase() : ele.toUpperCase();
+}).join("")    
+
+console.log(sw);  // bAvLEeY
+
+*/
+
+
+
+
+/*
+
+// Second Convert Negative Number To Positive Number And Reverse ?????
+
+let inv = invertedNumbers.map(function(num){
+    return num === -num    ? num : -num ;
+},)
+
+console.log(inv);  // (6) [-1, 10, 20, -15, -100, 30]
+
+*/
+
+
+
+/*
+
+// Third Remove Numbers inside String ?????
+
+// let removeNumbers = ignoreNumbers.split("").map(function(cut){
+//     return isNaN(parseInt(cut)) ? cut : "" ;
+// },).join("");
+
+// console.log(removeNumbers);  // Bavley
+
+*/
+
+
+
+
+/*
+
+// Remove Letters inside String ?????
+
+let removeLetter = ignoreNumbers.split("").map(function(cut){
+    return isFinite(cut) ? cut : "" ;
+},).join("");
+
+console.log(removeLetter);  // 72954
+
+*/
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_60......................................
+
+
+/*
+
+Filter
+    -- method creates a new array-
+    -- with all elements that pass the test implemented by the provided function.
+
+Syntax filter(callBackFunction (Element, Index, Array) {}, thisArg)
+    -- Element => The current element being processed in the array.
+    -- Index => The index of the current element being processed in the array.
+    -- Array => The Current Array
+
+*/
+
+/*
+
+// Get Friends With Name Starts With A
+let friends = ["Bavley", "Aziz", "Helmy", "Ammer", "Amr", "Ammar"];
+
+let filterFriends = friends.filter(function(a){
+    return a.startsWith("A")
+},)
+console.log(filterFriends);  // (2) ['Aziz', 'Amr', 'Ammer','Ammer']
+
+*/
+
+
+
+/*
+
+// Get Friends With Name second With m
+let friends = ["Bavley", "Aziz", "Helmy", "Ammer", "Amr", "Ammar"];
+
+let nameSecondWithM = friends.filter(function(m){
+    return m[1] === "m"
+});
+console.log(nameSecondWithM);  // (3) ['Ammer', 'Amr', 'Ammar']
+
+*/
+
+
+
+/*
+
+// Get Even Numbers Only
+// let numbers = [11, 20, 2, 5, 17, 10];
+
+// let evenNumbers = numbers.filter(function(e){
+//     return e % 2 === 0; 
+// },);
+// console.log(evenNumbers);  // (3) [20, 2, 10]
+
+
+*/
+
+
+
+/*
+
+// Get Odd Numbers Only 
+let numbers = [11, 20, 2, 5, 17, 10];
+
+let evenNumbers = numbers.filter(function(e){
+    return e % 2 === 1; 
+},);
+console.log(evenNumbers);  // (3) [11, 5, 17]
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_61......................................
+
+
+
+/*
+
+// Filter Words More Than 4 Characters
+let letter = "I Love Foood Code Too Playing Much";
+
+let smallWords = letter.split(" ").filter(function (ele) {
+    return ele.length <= 4
+});
+console.log(smallWords);  // (5) ['I', 'Love', 'Code', 'Too', 'Much']
+
+// OR
+
+let letter = "I Love Foood Code Too Playing Much";
+
+let smallWords = letter.split(" ").filter(function (ele) {
+    return ele.length <= 4
+}).join("  ");
+console.log(smallWords);  // I  Love  Code  Too  Much
+*/
+
+
+
+
+/*
+
+// Ignore Numbers Using "map"
+let ignoreNumbers =  "Ba72vl95ey4"; 
+
+let ign = ignoreNumbers.split("").map(function (ele) {
+    return isNaN(parseInt (ele)) ? ele : "";
+},).join("");
+console.log(ign);
+
+*/ 
+
+
+
+/*
+
+// Filter Strings + Multiply Numbers
+let mix = "A13BS2ZX";
+
+let mixedContent = mix.split("").filter(function (ele) {
+    return !isNaN(parseInt(ele));
+}).map(function(multiply){
+    return multiply * multiply
+}).join(" ")
+console.log(mixedContent);  // 1 9 4
+
+*/ 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_62......................................
+
+
+/*
+Reduce:
+    -- Move And Add All Element
+    -- method executes a reducer function on each element of the array,
+    -- resulting in a single output value.
+
+Syntax:
+reduce (callBackFunc (Accumulator, CurrentValue, Current Index, Source Array) {}, initialValue)
+    - Accumulator => the accumulated value previously returned in the last invocation
+    - Current Val => The current element being processed in the array
+    - Index => The index of the current element being processed in the array..
+            Starts from index e if an initialValue is provided.
+            Otherwise, it starts from index 1.
+    - Array => The Current Array
+*/ 
+
+
+
+/*
+
+// Add All Numbers 
+
+let nums = [10, 20, 15, 30]
+
+let add = nums.reduce(function(Accumulator, CurrentValue, CurrentIndex, SourceArray){
+    console.log(` Acc => ${Accumulator}`)
+    console.log(`Current Element => ${CurrentValue}`);
+    console.log(` Current Element Index => ${CurrentIndex}`);
+    console.log(` Array => ${SourceArray}`);
+    console.log(Accumulator + CurrentValue);
+    console.log( `#########` );
+    return Accumulator + CurrentValue ;
+})
+
+console.log(add);
+
+*/ 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_63......................................
+
+
+/*
+
+Reduce
+    - Longest Word
+    - Remove Characters + Use Reduce
+
+*/ 
+
+
+/*
+
+// who is Longest Word ????
+let theBiggest = ["Bla", "Propaganda", "Other", "AAA", "Battery", "Test"];
+
+let longWord = theBiggest.reduce(function(Accumulator, CurrentValue){
+    console.log(` Acc => ${Accumulator}`)
+    console.log(`Current Element => ${CurrentValue}`);
+    console.log(Accumulator.length < CurrentValue.length ? CurrentValue : Accumulator );
+    console.log( `#########` );
+    return Accumulator.length < CurrentValue.length ? CurrentValue : Accumulator ;
+})
+console.log(longWord);
+
+*/
+
+
+/*
+
+// Remove "@" And Join String 
+let removeChars = ["B", "@", "@", "A", "V", "@", "@", "L", "E", "@", "Y"];
+
+// let remove = removeChars.filter(function(element){
+//     return !element.startsWith("@")
+// }).join("")
+// console.log(remove);  // BAVLEY
+
+// OR 
+// let remove = removeChars.filter(function(element){
+//     return !element.startsWith("@")
+// }).reduce(function(Accumulator, CurrentValue){
+//     return Accumulator + CurrentValue
+// })
+// console.log(remove);  // BAVLEY
+
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_64......................................
+
+
+
+/*
+
+forEach
+    --- method executes a provided function once for each array element.
+
+Syntax forEach(callBackFunction(Element, Index, Array) { }, thisArg)
+    - Element => The current element being processed in the array.
+    - Index => The index of the current element being processed in the array.
+    - Array => The Current Array
+
+Note
+    - doesn't Return Anything [Undefined]
+    - Break Wil1 Not Break The Loop
+
+*/
+
+/*
+
+// When I Click On The Element Print The Element In The console ????
+let all = document.querySelectorAll = ("ul li");
+
+all.forEach(function (element) {
+    element.onclick  = function () {
+        console.log(this);
+    };
+});
+
+
+*/ 
+
+
+
+
+/*
+
+// When I Click On The Element the element Will Be Active and Remove Active From All Element   ????
+let all = document.querySelectorAll = ("ul li");
+
+all.forEach(function (element) {
+    element.onclick  = function () {
+        // Remove Active From All Element   
+        all.forEach(function (ele){
+            ele.classList.remove("active")
+        });
+        // Add Active When I Click On An Element
+        this.classList.add("active")
+    };
+});
+
+*/
+
+
+
+
+
+/*
+
+// When I Click On The Element the element Will Be Active , Remove Active From All Element ,And delete All Divs 
+let allLis = document.querySelectorAll("ul li"); 
+
+let allDivs = document.querySelectorAll(".content div");
+
+allLis.forEach(function (element) {
+    element.onclick  = function () {
+        // Remove Active From All Element   
+        allLis.forEach(function (ele){
+            ele.classList.remove("active")
+        });
+        // Add Active When I Click On An Element
+        this.classList.add("active")
+        // Delete All Divs
+        allDivs.forEach(function(ele){
+            ele.style.display = 'none';
+        });
+    };
+});
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_65......................................
+
+/*
+
+Higher Order Functions - Challenge
+
+*/
+
+
+/*
+
+// Print El zero Wrb School
+let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+
+
+let zletter = myString[myString.length - true];
+
+let solution = myString.split("").map(function (el) {
+    return el.replace("_", " ")
+    })
+    .filter(function (el) {
+    return el === "," && el === isNaN(parseInt(el)) && el === zletter ; 
+    })
+    .reduce(function (acc, next) {
+        if (acc === next){
+            return `${acc}`
+        } else {
+            return `${acc}${next}`
+        }
+    });
+console.log(solution);
+
+
+*/ 
+
+
+
+/*
+
+// Another Solution 
+// let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b, S,c,h,o,o,l,2,0,Z"; 
+// let zletter = myString[myString.length - true]
+
+
+// let solution = myString.split("").filter(function(ele){
+//     return isNaN(+ele) && ele != "," && ele != zletter
+//     }). map(function(ele){
+//     return ele != "_" ? ele : " " ;
+//     }).reduce(function(ele, curr) {
+//     return ele === curr ? `${ele}` : `${ele}${curr}`
+//     })
+// console.log(solution); // Elzero Web School
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_66......................................
+
+
+/*
+
+Object:
+    - Intro and What Is Object
+    - Testing Window Object
+    - Accessing Object
+
+*/
+
+
+/*
+
+let user = {
+    // Properties
+    theName: "Bavley",
+    theAge: 21,
+    // Methods
+    sayHello: function () {
+    return `Hello`;
+    },  
+}
+
+console.log(`My Name is ${user.theName}`);
+console.log(`My Age is ${user.theAge}`);
+console.log(user.sayHello());
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_67......................................
+
+
+
+/*
+
+Object:
+    - Dig Deeper
+    - Dot Notation vs Bracket Notation
+    - Dynamic Property Name
+
+*/ 
+
+
+/*
+
+// Bracket Notation "Uses TO Declare " " OR Number OR  "-" "
+let user = {
+    "the-Name": "My Name is Bavley ",
+    21 : "My Age is 21 ",
+    "country of": "My country is Egypt",
+};
+
+console.log(user["the-Name"]);
+console.log(user["21"]);
+console.log(user["country of"]);
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_68......................................
+
+/*
+Object:
+- Nested Object And Trainings
+*/
+
+
+
+/*
+
+let user = {
+    // Properties
+    name : "Bavley",
+    age : 21, 
+    skills : ["HTML", "CSS", "JAVASCRIPT", "GITHUB", "SASS", "BOOTSTRAP 5", ],
+    // Method
+    available : false,
+    // Nested Object
+    addresses : {
+        KSA : "Riyadh",
+        EGP : {
+            ONE : "Giza",
+            TWO : "Cairo",
+        }
+    },
+    checkAvailable : function (){
+        if (user.available === true) {
+            return `He is Free To Work`
+        } else {
+            return `He is Not Free To Work`
+        }
+    }
+}
+
+console.log(user.skills[2])  // JAVASCRIPT
+console.log(user.checkAvailable())  
+console.log(user.addresses.EGP.TWO)  // Cairo
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_69......................................
+
+/*
+
+Using This In Object
+
+*/ 
+
+
+
+/*
+
+document.getElementById("cl").ondblclick = function () {
+    console.log(this)
+};
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_70......................................
+
+/*
+Object:
+    -Create Object With create Method
+*/ 
+
+
+/*
+
+let user = { 
+    age: 20,
+    doubleAge: function () {
+        return user.age * 2;
+    },
+};
+console.log(user);
+console.log(user.age);
+console.log(user.doubleAge());
+
+console.log(`################`)
+
+// Use Object With create Method 
+let copyObject = Object.create(user)
+console.log(copyObject);
+// Update 
+copyObject.age = 30;
+console.log(copyObject);
+console.log(copyObject.age);
+console.log(copyObject.doubleAge());
+
+/*
+
+OutPut_1 ==> 20 40
+OutPut_2 ==> 30 40
+
+In OutPut_2 The Function Is NOt Correct Bec, 30*2 != 40 ,But = 60    
+
+*/ 
+
+
+
+
+
+
+
+
+
+/*
+
+// TO solve The Problem You Must Use this in Function
+let user = { 
+    age: 20,
+    doubleAge: function () {
+        return this.age * 2;
+    },
+};
+console.log(user);
+console.log(user.age);
+console.log(user.doubleAge());
+
+console.log(`################`)
+
+// Use Object With create Method 
+let copyObject = Object.create(user)
+console.log(copyObject);
+// Update 
+copyObject.age = 30;
+console.log(copyObject);
+console.log(copyObject.age);
+console.log(copyObject.doubleAge());
+
+/*
+
+OutPut_1 ==> 20 40
+OutPut_2 ==> 30 60
+
+OutPut_2 ==> is Correct
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_71......................................
+
+
+/*
+
+Object:
+    - Create Object With assign Method
+    - Object.assign(target, More Object)
+*/
+
+
+
+
+
+/*
+
+let obj1 = {
+    prop1 : 1,
+    meth1 : function () {
+        return this.prop1;
+    },
+};
+
+let obj2 = {
+    prop2 : 2,
+    meth2 : function () {
+        return this.prop2;
+    },
+}
+
+let targetObject = {
+    prop1: 100,
+    prop3: 3,
+};
+
+console.log(obj1.prop1);
+console.log(obj2.prop2);
+
+let finalObject = Object.assign(targetObject, obj1, obj2);
+console.log(finalObject);
+
+// Update 
+finalObject.prop4 = 4 ;
+console.log(finalObject);
+
+// if You Have Not A target and i want to Creat A New Object
+let newObject = Object.assign({}, obj1, obj2, {prop5 : 5, prop6 : 6});
+console.log(newObject);
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_72......................................
+
+
+/*
+DOM
+    - What Is DOM
+    - DOM Selectors
+        -- Find Element By ID
+        -- Find Element By Tag Name
+        -- Find Element By Class Name
+        -- Find Element By CSS Selectors
+        -- Find Element By Collection:
+            --- title
+            --- body
+            --- images
+            --- forms
+            --- links
+*/
+
+
+/*
+
+//  GET ELement By ID
+let myID = document.getElementById("my-div");
+console.log(myID);  // <div id="my-div">Hello Div</div>
+
+
+//  GET ELement By TagName
+let myTagName = document.getElementsByTagName("p");
+console.log(myTagName[1]);  // <p>Hello Paragraph 2</p>
+
+
+//  GET ELement By ClassName
+let myClassName = document.getElementsByClassName("my-span")
+console.log(myClassName[0]);  // <span class="my-span">My Span</span>
+
+
+//  GET ELement By QuerySelector 
+let myQuery = document.querySelector(".my-span")
+console.log(myQuery)
+
+
+//  GET Element By Collection:
+console.log(document.title);
+console.log(document.body);
+console.log(document.forms[0].one.value);
+console.log(document.links[1].href);
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_73......................................
+
+
+/*
+
+DOM [Get / Set Elements Content And Attributes]
+    - innerHTML
+    - textContent ==> Only Content
+    - Change Attributes Directly
+    - Change Attributes With Methods:
+        -- getAttribute
+        -- setAttribute  ==> ("Name Like => href", "Value Like => https://google.com")
+
+Search
+    - innerText
+
+*/
+
+
+
+
+
+/*
+
+// GET
+let myElement = document.querySelector(".js")
+// innerHTML
+console.log(myElement.innerHTML)  // JavaScript <span>Div</span> &lt;Span&gt; 
+// textContent 
+console.log(myElement.textContent) // JavaScript Div <span> 
+
+// SET 
+myElement.innerHTML = "Text From <span>main.js</span> File"  // Text From main.js File And Add Element in HTML TAG
+myElement.textContent = "Text From <span>main.js</span> File"  // Text From <span>main.js</span> File
+// Add Link TO image , Alt , title ,And ID  
+document.images[0].src = "https://google.com";
+document.images[0].alt = "Alternate";
+document.images[0].title = "Picture";
+document.images[0].id = "pic";
+document.images[0].className = "img";
+
+//  USE Methods
+let myLink = document.querySelector(".link");
+console.log(myLink.getAttribute("class"));
+console.log(myLink.getAttribute("href"));
+
+myLink.setAttribute("href", "https://twitter.com");
+myLink.setAttribute("title", "Twitter");
+
+*/ 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_74......................................
+
+
+/*
+
+DOM [Check Attributes] 
+    - Element.attributes
+    - Element.hasAttribute
+    - Element.hasAttributes
+    - Element.removeAttribute
+
+*/ 
+
+
+
+
+/*
+
+// Element.attributes
+// console.log(document.getElementsByTagName("p")[0].attributes);
+
+*/
+
+
+
+/*
+
+// Element.hasAttribute to Check "use to Check Data And Add Attributes"
+let myPara = document.getElementsByTagName("p")[0];
+
+if (myPara.hasAttribute("data-src")){
+    myPara.setAttribute("data-src");
+} else {
+    myPara.setAttribute("data-src" ,"Update");
+};
+
+*/
+
+
+
+
+
+
+/*
+
+// Element.removeAttribute "used to Remove Data And SET A new Data "
+let myPara = document.getElementsByTagName("p")[0];
+
+if (myPara.hasAttribute("data-src")){
+    myPara.removeAttribute("data-src");
+} else {
+    myPara.setAttribute("data-src" ,"Update");
+};
+
+*/
+
+
+
+/*
+
+// Example 
+// Element.removeAttribute "used to Remove Data And SET A new Data "
+let myPara = document.getElementsByTagName("p")[0];
+
+if (myPara.hasAttribute("data-src")){
+    if (myPara.getAttribute("data-src") === "" ){
+        myPara.removeAttribute("data-src");
+    } else {
+        myPara.setAttribute("data-src" ,"Update");
+    };
+} else {
+    console.log(`Not Found`);
+};
+
+*/
+
+
+
+
+/*
+
+// Element.hasAttributes
+let myDiv = document.getElementsByTagName("div")[0];
+
+if (myDiv.hasAttributes()){
+    console.log(`Found`);
+} else {
+    console.log(`Not Found`);
+};
+
+*/ 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_75......................................
+
+
+/*
+
+DOM [Create Elements]
+    - createElement
+    - createComment
+    - createTextNode
+    - createAttribute
+    - appendChild
+
+*/
+
+/*
+
+Steps:
+    1- Created Element 
+    2- Add Attributes 
+    3- Write a Comment 
+    4- Write Text 
+    5- Added in The HTML Body
+
+*/    
+/*
+
+let myElement = document.createElement("div");
+let myAttribute = document.createAttribute("data-custom");
+let myComment = document.createComment("Data From Js")
+let myText = document.createTextNode("This MY Div")
+
+// The First way To Add Attributes
+myElement.className = "product" ;
+// use Attributes
+myElement.setAttributeNode(myAttribute);
+// The Second way To Add Attributes
+myElement.setAttribute("data-test", "myDiv")
+// Append A Comment
+myElement.appendChild(myComment)
+// Append Text inside The "Div" 
+myElement.appendChild(myText);
+
+// Append Element TO Body
+document.body.appendChild(myElement);
+
+
+
+// Testing Step By Step in Console
+console.log(myElement);
+
+
+*/ 
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_76......................................
+
+/*
+
+DOM [Create Elements]
+    - Practice Product With Heading And Paragraph
+    ==> Creat 100 Elements ["div" ==> { 1-HEADER , 2-H2 , 3-P}]
+*/
+
+
+
+
+
+/*
+
+// Creat Elements
+let myMainELement = document.createElement("div");
+let myHeader = document.createElement("h2");
+let myPara = document.createElement("p");
+
+// Creat Text 
+let myHeaderText = document.createTextNode("Product")
+let myParaText = document.createTextNode("Description")
+
+// Creat Attributes To The Main Element
+myMainELement.className = "product";
+
+// Add Heading Text 
+myHeader.appendChild(myHeaderText);
+// Add Heading To Main Element
+myMainELement.appendChild(myHeader);
+
+// Add Paragraph Text 
+myPara.appendChild(myParaText);
+// Add Paragraph To Main Element
+myMainELement.appendChild(myPara);
+
+
+// Append to HTML Body
+document.body.appendChild(myMainELement);
+
+*/
+
+
+
+
+
+
+
+/*
+
+
+for (let i = 0; i < 100; i++){
+    let myMainELement = document.createElement("div");
+    let myHeader = document.createElement("h2");
+    let myPara = document.createElement("p");
+
+// Creat Text 
+    let myHeaderText = document.createTextNode("Product")
+    let myParaText = document.createTextNode("Description")
+
+// Creat Attributes To The Main Element
+    myMainELement.className = "product";
+
+// Add Heading Text 
+    myHeader.appendChild(myHeaderText);
+// Add Heading To Main Element
+    myMainELement.appendChild(myHeader);
+
+// Add Paragraph Text 
+    myPara.appendChild(myParaText);
+// Add Paragraph To Main Element
+    myMainELement.appendChild(myPara);
+
+    document.body.appendChild(myMainELement);
+
+}
+
+
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_77......................................
+
+/*
+
+DOM [Deal With Childrens]
+    - children ==> Only Elements
+    - childNodes ==> All
+    - firstChild
+    - lastChild
+    - firstElementChild
+    - lastElementChild
+
+*/
+
+/*
+
+let myDiv = document.getElementsByTagName("div")
+
+// children
+console.log(myDiv[0].children);
+console.log(myDiv[0].children[0].innerHTML = "BAVLEY" );
+
+// childNodes
+console.log(myDiv[0].childNodes);
+
+// firstChild - lastChild
+console.log(myDiv[0].firstChild);
+console.log(myDiv[0].lastChild);
+
+//  firstElementChild - lastElementChild
+console.log(myDiv[0].firstElementChild);
+console.log(myDiv[0].lastElementChild);
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_78......................................
+
+
+/*
+
+DOM [Events]
+    - Use Events On HTML
+    - Use Events On JS
+        --- onclick
+        --- oncontextmenu ==> RightClick
+        --- onmouseenter
+        --- onmouseleave
+
+            Window.:
+        --- onload
+        --- onscroll
+        --- onresize
+
+            Form:
+        --- onfocus
+        --- onblur
+        --- onsubmit
+
+*/
+
+
+
+
+/*
+
+// onclick - ondblclick - onmouseleave - onmouseenter - oncontextmenu
+
+let myBtn = document.getElementsByTagName("button")[0];
+myBtn.onmouseenter = function() {
+    myBtn.setAttribute("class", "btn"); 
+};
+};
+
+*/
+
+
+
+
+/*
+
+// onload - onresize - onscroll
+
+window.onscroll = function() {
+    console.log(`Scroll`)
+}
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_79......................................
+
+
+
+/*
+
+DOM [Events]
+    - Validate Form Practice
+    - Prevent Default ==>
+*/
+
+
+
+/*
+
+document.links[0].onmouseenter = function(event) {
+    console.log(event);
+}
+
+*/
+
+
+
+/*
+
+
+// Example_1 :
+// print Data Input In Console 
+let userInput = document.querySelector("[name= 'username']");
+let userAge = document.querySelector("[name= 'age']");
+
+document.forms[0].onsubmit = function (e) {
+    let userValid = false ;  // Default Value
+    let ageValid = false ;
+
+    console.log(`Name : ${userInput.value}`)
+    console.log(`Number Of Name : ${userInput.value.length}`)
+    
+    console.log(`PassWord : ${userAge.value}`)
+    console.log(`Number Of PassWord : ${userAge.value.length}`)
+    
+};
+
+
+
+*/
+
+
+/*
+
+// Dont Send Data To Server if The Conditions Not Achieve  
+let userInput = document.querySelector("[name= 'username']");
+let userAge = document.querySelector("[name= 'age']");
+
+document.forms[0].onsubmit = function (e) {
+    let userValid = false ;  // Default Value
+    let ageValid = false ;  // Default Value
+
+    // input
+    if ( userInput.value !== "" && userInput.value.length <= 10 && isNaN(parseInt(userInput.value)) ) {
+        userValid = true 
+    }
+
+    // Age
+    if ( userAge.value !== "" && !isNaN(parseInt(userAge.value))) {
+        ageValid = true 
+    }
+
+    if (userValid === false || ageValid === false ) {
+        e.preventDefault();
+    }
+};
+
+
+*/
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_80......................................
+
+/*
+
+DOM [Events Simulation]
+    - click
+    - focus
+    - blur
+==> USe in Serial Number
+*/ 
+
+
+/*
+
+// Focus on Input one 
+let one = document.querySelector(".one");
+
+window.onload  = function () {
+    one.focus()
+};
+
+// Focus on Input Two When OnBlur input one 
+let two = document.querySelector(".two");
+
+one.onblur  = function () {
+    two.focus()
+};
+
+// Click Submit When I Onblur input Two
+two.onblur = function () {
+    document.querySelector(".btn").click();
+}
+
+
+
+*/ 
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_81......................................
+
+
+/*
+
+DOM [Class List]
+    --classList
+        --- length
+        --- contains ==> Boolean[true, false]
+        --- item(index)
+        --- add
+        --- remove
+        --- toggle ==> Add And Remove 
+
+*/
+
+
+/*
+
+let myDiv = document.querySelector("#my-div")
+// item - contains- length 
+console.log(myDiv.classList)
+console.log(myDiv.classList.contains("Bavley"))  // false
+console.log(myDiv.classList.contains("one"))    // true
+console.log(myDiv.classList.item("0"))    // one
+
+// toggle -remove - add
+myDiv.onclick = function () {
+    myDiv.classList.add("bavley", "aziz");
+    myDiv.classList.remove("one");
+    myDiv.classList.toggle("amr");
+}
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_82......................................
+
+
+/*
+
+DOM [CSS]
+    - style
+    - cssText
+    - removeProperty(propertyName) [Inline, Stylesheet]
+    - setProperty (propertyName, value, priority)
+
+*/
+
+
+/*
+
+let myDiv = document.getElementById("my-div");
+// style
+myDiv.style.color = "red" ;  // One Letter
+myDiv.style.backgroundColor = "blue" ;  // Two Letter "camelCase"
+// cssText
+myDiv.style.cssText = "display : flex; justify-content : center; align-items : center "
+// removeProperty
+myDiv.style.removeProperty("align-items")
+// setProperty
+myDiv.style.setProperty("opacity", "0.7", "important")
+// Edit In External StyleSheet
+document.styleSheets[0].cssRules[1].style.removeProperty("line-height")
+document.styleSheets[0].cssRules[1].style.setProperty("color", "orange")
+
+*/
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_83......................................
+
+/*
+
+DOM [Deal With Elements]
+    -- before [Element || String]
+    -- after [Element || String]
+    -- append [Element || String]  ==> Inside Element
+    -- prepend [Element || String]
+    -- remove
+
+*/
+
+/*
+
+let myDiv = document.getElementById("my-div");
+
+let myPara = document.createElement("p");
+let myParaClass = document.createAttribute("class")
+let myParaText = document.createTextNode("Paragraph From JS");
+
+let myH2 = document.createElement("h2");
+let myH2Text = document.createTextNode("H2 From JS");
+
+*/
+
+/*
+
+// Text Before The Div 
+myDiv.before("Hello From JS");
+myDiv.before(myPara);
+// Text after The Div
+myDiv.after(myH2);
+
+*/
+
+
+
+/*
+
+// Append - prepend
+myH2.append(myH2Text);
+myPara.append(myParaText);
+myDiv.append( myH2 , myPara);
+
+*/
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_84......................................
+
+
+/*
+
+DOM [Traversing]
+    - nextSibling
+    - previousSibling
+    - nextElementSibling ==> Only Next ELement 
+    - previousElementSibling
+    - parentElement
+
+*/
+
+
+/*
+
+let spanTwo = document.querySelector(".two");
+
+// nextSibling - nextElementSibling - previousElementSibling - previousSibling
+console.log(spanTwo.nextSibling);  // Comment
+console.log(spanTwo.nextElementSibling);  // <span class="three">three</span>
+spanTwo.nextElementSibling.remove();  // remove three
+
+// parentElement 
+spanTwo.onclick = function (){
+    spanTwo.parentElement.style.cssText = "opacity : 0.5;"
+}
+
+*/ 
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_85......................................
+/*
+DOM [Cloning]
+    - cloneNode(Deep)
+
+
+*/
+
+/*
+
+let myP = document.querySelector("p").cloneNode(true);
+let myDiv = document.querySelector("div");
+
+// Change A New ID Paragraph
+myP.id = `${myP.id}-clone`;
+
+myDiv.appendChild(myP);
+
+*/
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_86......................................
+
+/*
+
+DOM [Add Event Listener]
+    - addEventListener
+    - Use Without On
+    - Attach Multiple Events
+    - Error Test
+
+
+    Search
+    - Capture & Bubbling JavaScript
+    - removeEventListener
+
+*/
+
+/*
+
+
+
+*/
+// before Creating ELement
+// window.onload = "Bavley" ; // Nothing
+
+
+let myDiv = document.querySelector("div");
+
+// myDiv.addEventListener("click", function(){
+//     console.log("Massage From Onclick addEvent ")
+// },)
+
+
+// Creat A new Clone Div When I Click
+myDiv.onclick = function () {
+    let myCloneDiv = myDiv.cloneNode(true);
+    myCloneDiv.className = "clone";
+    // Display
+    document.body.appendChild(myCloneDiv); 
+}
+
+
+
+//
+
+
+// anonymous function - addEventListener
+// anonymous function
+let cloned = document.querySelector(".clone")
+
+// cloned.onclick = function () {
+//     console.log(`i AM Cloned`) // Error Bec i class Element Not Available
+// }
+
+// addEventListener
+document.addEventListener("click", function(e){
+    if (e.target.className === "clone") {
+        console.log(` i Am Cloned`)
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_87......................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_88......................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_89......................................
+
+
+
+
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_90......................................

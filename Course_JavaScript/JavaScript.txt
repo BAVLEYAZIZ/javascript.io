@@ -1,0 +1,339 @@
+// .........................................Lesson_1......................................
+
+/*
+    Output TO Screen
+    1-window.alert ==>Not recommended
+    2-document.write ==>Not recommended,  "U can Use document.creatElement("") to Creat Am Element"
+    3-console.log() ==>To Write Massage In Console TO Check Your Code
+*/
+
+// 1- window.alert("hello,World"); 
+
+//2- document.write("<h1>Hello,World</h1>"); 
+
+//3- console.log("Welcome From JavaScript ")
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_2......................................
+
+/*
+    Console Methods
+    1-log
+    2-error
+    3-table
+
+    web API
+
+    styling Console
+    1-directive %c
+*/
+
+// 1-console.log("hello")
+
+// 2-console.error("Error")
+
+// 3-console.table(["Bavley","Aziz","Helmy"])
+
+// 1-console.log(" %cHello,  %cWorld", "color:red; font-size:40px;", "color:green; font-size:40px;");
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_3......................................
+
+/*
+    ES6 ==>ECMAScript معاير
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_4......................................
+
+/*
+    Data Type Intro
+    1- String ==> "letter or number" 
+    2- Number ==> Number Without ""
+    3- Array=object ==> List[Numbers , Letters]
+    4- Boolean ==> True Or false
+    5- Undefined ==> Unavailable
+    6- Null ==> Empty
+
+*/
+
+// 1-console.log(typeof "Bavley")
+// 2-console.log(typeof 200)
+// 3-console.log(typeof ["14", "78", 100 ])
+// 3-console.log(typeof {name: "Bavley", age:21 , country:"Egypt"})
+// 4-console.log(typeof true)
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_5......................................
+
+/*
+    Variables Intro
+    1- What Is Variable ? ==>  
+    2- Why We Use Variables ? ==> To control It In All Project
+    3- Declare A Variable And Use It 
+    4- Syntax ( Keyword | Variable name | Assignment Operator | variable Value  )
+    5- variable Without Var ==> Not Recommended
+    6- Multiple Variable In The Same Line 
+    7- Id And Global Variable ==> Access To An Element HTML Page
+    8- Loosely Typed VS Strong Typed 
+*/
+
+// 4-var  user = "Bavley"
+// 4-var  age  = 21 
+// console.log(user);
+// console.log(age);  
+
+// 6- var  user = "Bavley",
+    //  age  = 21
+// console.log(user);
+// console.log(age);  
+
+
+// 7- hello.innerHTML = "Bye";
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_6......................................
+
+/*
+    identifiers (var)
+    - Name Conventions And Rules ==> Don't Use Number and # In The First Use ( $ | bavLey | BavLey | _bavley )
+    - Reserved Words ==> Like ( var | function | if | while .... )
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_7......................................
+
+
+/*
+    What IS The Difference Between ( Var , Let , Const ) ?
+
+        Var:
+            1-Redeclare (Yes)
+            2-Access Before Declare (undefined)
+            3-variable Scope Drama ( Added To Window)
+            4-Block OR Function Scope
+
+        Let:
+            1-Redeclare (No)
+            2-Access Before Declare (error)
+            3-variable Scope Drama (Not Added To Window)
+            4-Block OR Function Scope
+
+        Const:
+            1-Redeclare (No)
+            2-Access Before Declare (error)
+            3-variable Scope Drama (Not Added To Window)
+            4-Block OR Function Scope
+
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_8......................................
+
+/*
+    String Syntax ==> "Bavley Aziz 'helmy'" , 'Bavley Aziz "helmy"'
+    Escape + Line Continue ==> "Bavley \\ Aziz \"helmy\""
+    New Line ==> \n 
+*/
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_9......................................
+
+/*
+    Concatenation ==> +
+    " " ==> Space
+*/
+
+// let a = "We Love"
+// let b = "JavaScript"
+
+// document.write(a + " " + b);
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_10......................................
+
+/*
+    Template Literals ( Template Strings )
+*/
+
+/*let a = "We Love"
+let b = "JavaScript"
+let c = "And"
+let d = "Programming"*/
+
+// console.log(a + " \"\" "+ b +"\n "+ c +" "+ d )
+
+/////       ECMAscript Method           /////
+/*console.log(`${a} "" ${b}      
+${c}  ${d} \\`) */       //TO Add Variable Uses ==> ${}   
+
+////      Example:    ////
+
+/* let title = "Bavley";
+let description = "Bavley Aziz Helmy";
+
+let markUp = `
+    <div class ="parent">
+        <div class="child">
+            <h2>${title}</h2>
+            <p>${description}</p>
+        </div>
+    </div>
+`;
+
+document.write(markUp); */
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_11......................................
+
+/* Arithmetic operators :
+    + Addition
+    - Subtraction
+    * multiplication
+    / Division
+    ** Exponentiation (ES7)
+    % Modulus (D1vision Remainder)
+    ++ Increment [ Post / Pre ] ==> Added 
+    -- Decrement [ Post / Pre ] ==> subtract 
+*/  
+
+// console.log(10+20)
+// console.log(10+"Bavley")    // 10 ==>String
+// console.log(10 - "Bavley")      // NaN ==> Not a Number
+// console.log(10 - 20);
+// console.log(10 - "Osama");  // NaN
+// console.log(typeof NaN);
+// console.log(10 * 20);
+// console.log(10 - 20);
+// console.log(20 / 5);
+// console.log(20 / 3);
+// console.log(2 ** 4);
+// console.log(2 *2 *2 *2);
+// console.log(10 / 2);
+// console.log(11 % 2);    // Remove 1 TO Become Regular Number
+
+//  Increment "Post"
+/*let num = 1
+console.log(num++);*/   // Put Number In The First Then Increases The Number
+
+// Increment "pre"
+/*let num = 1
+console.log(++num); */  // increases The Number in the First Then Put number 
+
+
+// _____________________________________________________________________________________________________
+
+
+
+
+// .........................................Lesson_11......................................
+
+/*
+    -  + Unary Plus [Return Number If Its Not Number]
+    -  - Unary Negation [Return Number If Its Not Number + Negates It]
+Tests:
+    - Normal Number
+    - String Number
+    - String Negative Number
+    - String Text
+    - Float
+    - Hexadecimal Numeral System => 0×FF
+    - null
+    - false
+    - true
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
